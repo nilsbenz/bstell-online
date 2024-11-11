@@ -1,0 +1,37 @@
+---
+import donut from "@/assets/images/donut.svg";
+import { buttonVariants } from "@/components/ui/button";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Seite nicht gefunden">
+  <div class="relative">
+    <div class="home-bg absolute inset-0 -z-10">
+      <div class="home-bg-overlay h-full w-full"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-6 py-20 space-y-12">
+      <div class="flex items-center justify-center" aria-label="404">
+        <p class="text-8xl font-bold sm:text-9xl">4</p>
+        <img
+          src={donut.src}
+          alt="Seite nicht gefunden"
+          class="-mr-6 -ml-1 aspect-square w-40 animate-scale object-contain sm:-mr-10 sm:-ml-2 sm:w-60"
+        />
+        <p class="text-8xl font-bold sm:text-9xl">4</p>
+      </div>
+      <div class="space-y-8">
+        <p class="text-center text-lg font-medium">
+          Hmm... diese Seite gibt's noch nicht.
+        </p>
+        <div class="flex justify-center">
+          <a
+            class={buttonVariants({ variant: "outline", size: "lg" })}
+            href="/"
+          >
+            Zurück nach Hause
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

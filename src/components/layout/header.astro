@@ -1,0 +1,60 @@
+---
+import { BstellIcon } from "@/lib/constants";
+import { cn } from "@/lib/utils";
+import { MailIcon } from "lucide-react";
+import { buttonVariants } from "../ui/button";
+---
+
+<header
+  class="fixed top-0 left-0 right-0 h-16 backdrop-blur z-40 dotted-bg border-b-2 border-background"
+>
+  <div
+    class="max-w-4xl flex items-center justify-between mx-auto h-full pl-2 pr-4"
+  >
+    <a
+      href="/"
+      class={cn(
+        buttonVariants({ variant: "ghost" }),
+        "flex items-center gap-2"
+      )}
+    >
+      <BstellIcon
+        className="!size-8 shrink-0 text-primary"
+        strokeWidth={2.25}
+      />
+      <h1 class="font-medium text-xl">Bstell online</h1>
+    </a>
+    <div class="flex gap-2">
+      <nav class="space-x-2 hidden sm:flex items-center">
+        <a
+          href="#funktionen"
+          class={cn(buttonVariants({ variant: "ghost", size: "sm" }))}
+        >
+          Funktionen
+        </a>
+        <a
+          href="#kosten"
+          class={cn(buttonVariants({ variant: "ghost", size: "sm" }))}
+        >
+          Kosten
+        </a>
+        <a
+          href="https://bstell.online/demo"
+          target="_blank"
+          rel="noreferer"
+          class={cn(buttonVariants({ variant: "ghost", size: "sm" }))}
+        >
+          Demo
+        </a>
+      </nav>
+      <a
+        href="mailto:nils.benz@icloud.com"
+        class={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-9")}
+        aria-label="Kontakt"
+      >
+        <MailIcon className="size-5" strokeWidth={2.5} />
+      </a>
+    </div>
+  </div>
+</header>
+<div class="h-16"></div>

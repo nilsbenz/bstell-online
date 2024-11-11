@@ -1,0 +1,29 @@
+---
+import { BstellIcon } from "@/lib/constants";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "../ui/button";
+---
+
+<nav
+  class="sm:hidden fixed bottom-3 left-3 right-3 z-40 font-medium backdrop-blur dotted-bg shadow-lg rounded-full flex [&>*]:grow max-w-sm mx-auto p-0.5 border-2 ring-2 ring-inset ring-background"
+>
+  <a href="/" class={cn(buttonVariants(), "px-2 mr-2")} aria-label="Startseite">
+    <BstellIcon className="size-6 shrink-0" strokeWidth={2.75} />
+  </a>
+  <a
+    href="#funktionen"
+    class={cn(buttonVariants({ variant: "ghost" }), "px-3")}
+  >
+    Funktionen
+  </a>
+  <a href="#kosten" class={cn(buttonVariants({ variant: "ghost" }), "px-3")}>
+    Kosten
+  </a>
+  <a
+    href="https://bstell.online/demo"
+    class={cn(buttonVariants({ variant: "ghost" }), "px-3")}
+  >
+    Demo
+  </a>
+</nav>
+<div class="sm:hidden h-7 bg-card"></div>

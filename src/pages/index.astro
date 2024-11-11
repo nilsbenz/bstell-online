@@ -1,0 +1,26 @@
+---
+import {
+  FAQ,
+  FeatureSection,
+  HeroImage,
+  HeroSection,
+  Pricing,
+} from "@/components/home";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Bstell online">
+  <div class="space-y-40 pb-40">
+    <div>
+      <HeroSection />
+      <HeroImage client:load />
+    </div>
+    <div>
+      <FeatureSection client:load />
+    </div>
+    <Pricing />
+    <div>
+      <FAQ client:load />
+    </div>
+  </div>
+</Layout>

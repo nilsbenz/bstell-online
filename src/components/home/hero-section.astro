@@ -1,0 +1,65 @@
+---
+import coffee from "@/assets/images/coffee.svg";
+import { BstellIcon } from "@/lib/constants";
+import { MailIcon, TabletSmartphoneIcon } from "lucide-react";
+import { buttonVariants } from "../ui/button";
+import { FadeIn } from "../ui/fade-in";
+---
+
+<div class="relative">
+  <div class="home-bg absolute inset-0 -z-10">
+    <div class="home-bg-overlay h-full w-full"></div>
+  </div>
+  <section
+    class="max-w-4xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-[1fr_24rem] items-center min-h-[60dvh]"
+  >
+    <div class="flex flex-col gap-8 max-w-md mx-auto md:max-w-full">
+      <FadeIn client:load delay={0.2}>
+        <h2
+          class="text-4xl sm:text-5xl font-bold relative text-center md:text-left"
+        >
+          Das <span
+            class="bg-gradient-to-br from-rose-500 to-pink-600 inline-block text-transparent bg-clip-text"
+            >Kassensystem</span
+          ><br />für Vereine
+        </h2>
+      </FadeIn>
+      <FadeIn client:load delay={0.4}>
+        <p class="mt-4 text-center md:text-left text-balance">
+          Mit <span
+            class="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block px-1.5 shadow-md"
+            ><BstellIcon className="inline-block size-5" strokeWidth={2.5} /> Bstell
+            online</span
+          > kann an Veranstaltungen beliebiger Grösse einfach und schnell Bestellungen
+          aufgenommen und abgerechnet werden.
+        </p>
+      </FadeIn>
+      <FadeIn client:load delay={0.6}>
+        <div class="flex gap-4 justify-center items-center md:justify-start">
+          <a
+            href="https://bstell.online"
+            rel="noreferer"
+            class={buttonVariants({ variant: "outline", size: "lg" })}
+          >
+            <TabletSmartphoneIcon className="size-5" strokeWidth={2.5} />
+            Zur App
+          </a>
+          <a
+            href="mailto:nils.benz@icloud.com"
+            class={buttonVariants({ variant: "ghost" })}
+          >
+            <MailIcon className="size-5" strokeWidth={2.5} />
+            Kontakt
+          </a>
+        </div>
+      </FadeIn>
+    </div>
+    <FadeIn client:load delay={0.4} from="right">
+      <img
+        src={coffee.src}
+        alt="Kaffee"
+        class="w-full h-full max-w-md mx-auto hidden md:block animate-move-x"
+      />
+    </FadeIn>
+  </section>
+</div>

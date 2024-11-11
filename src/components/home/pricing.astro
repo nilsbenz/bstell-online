@@ -1,0 +1,137 @@
+---
+import { cn } from "@/lib/utils";
+import { MailIcon, PrinterIcon } from "lucide-react";
+import { buttonVariants } from "../ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../ui/card";
+import { FadeIn } from "../ui/fade-in";
+---
+
+<section class="max-w-4xl mx-auto px-6 scroll-mt-24" id="kosten">
+  <h2 class="text-3xl sm:text-4xl font-semibold">Und was kostet es?</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-20 mt-8 md:mt-12">
+    <FadeIn client:load className="h-full" delay={0.3}>
+      <Card className="flex flex-col relative h-full">
+        <CardHeader>
+          <CardTitle>
+            Nur die{" "}
+            <span
+              class="bg-gradient-to-br from-rose-500 to-pink-600 inline-block text-transparent bg-clip-text"
+            >
+              Software
+            </span>
+          </CardTitle>
+          <CardDescription>
+            Optimal, wenn du bereits einen netzwerkfähigen Epson POS-Drucker
+            besitzt.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="grow">
+          <ul class="list-disc pl-6 [&>li]:font-medium space-y-2">
+            <li>Alle Features der Software, z.B.:</li>
+            <ul class="list-disc pl-6">
+              <li>Bestellungen vom Personal</li>
+              <li>Online-Bestellungen per QR-Code</li>
+              <li>Auswertung nach dem Event</li>
+            </ul>
+            <li>Du brauchst noch:</li>
+            <ul class="list-disc pl-6">
+              <li>
+                mind. einen netzwerk&shy;fähigen Epson POS-Drucker (z.B. Epson
+                TM-T20III)
+              </li>
+              <li>stabiles Internet am Event</li>
+              <li>einen Laptop</li>
+            </ul>
+          </ul>
+        </CardContent>
+        <div class="pt-8 pb-16 space-y-1">
+          <p class="text-center text-5xl font-semibold">100 Fr.*</p>
+          <p class="text-center font-medium text-sm">
+            + 1% vom Umsatz aus Online-Bestellungen
+          </p>
+        </div>
+        <a
+          href="mailto:nils.benz@icloud.com"
+          class={cn(
+            buttonVariants({ variant: "outline", size: "lg" }),
+            "absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2"
+          )}
+        >
+          <MailIcon className="size-5" strokeWidth={2.5} />
+          Anfrage
+        </a>
+      </Card>
+    </FadeIn>
+    <FadeIn client:load className="p-0.5 flex flex-col relative" delay={0.5}>
+      <CardHeader>
+        <CardTitle>
+          Software +{" "}
+          <span
+            class="bg-gradient-to-br from-teal-400 to-teal-500 inline-block px-1.5 shadow-md"
+          >
+            <PrinterIcon className="inline-block size-5" strokeWidth={3} />{" "}
+            Hardware
+          </span>
+        </CardTitle>
+        <CardDescription>
+          In Zusammenarbeit mit dem Musikverein Konkordia Au bieten wir
+          umfangreichen Support, bei Bedarf auch vor Ort.
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="grow">
+        <ul class="list-disc pl-6 [&>li]:font-medium space-y-2">
+          <li>Alle Features der Software</li>
+          <li>Support bei Bedarf:</li>
+          <ul class="list-disc pl-6">
+            <li>Einpflegen der Speisekarte</li>
+            <li>Unterstützung beim Einrichten der Online-Bestellungen</li>
+          </ul>
+          <li>Je nach Verfügbarkeit am Event:</li>
+          <ul class="list-disc pl-6">
+            <li>3 Drucker</li>
+            <li>Router inkl. Internet</li>
+            <li>Admin-Laptop</li>
+            <li>Betreuung des Systems vor Ort</li>
+          </ul>
+        </ul>
+      </CardContent>
+      <div class="pt-8 pb-16 space-y-1">
+        <p class="text-center text-5xl font-semibold">
+          <span class="text-base font-medium">ab</span> 300 Fr.*
+        </p>
+        <p class="text-center font-medium text-sm">
+          genauere Infos{" "}
+          <a href="/downloads/pricing_au.pdf" class="underline"> hier </a>
+        </p>
+      </div>
+      <a
+        href="mailto:info@mvau.ch"
+        class={cn(
+          buttonVariants({ variant: "outline", size: "lg" }),
+          "absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2"
+        )}
+      >
+        <MailIcon className="size-5" strokeWidth={2.5} />
+        Anfrage
+      </a>
+    </FadeIn>
+  </div>
+  <div class="col-span-full mt-20">
+    * Preis pro Event bis zu einem Umsatz von 15'000 Fr.
+    <br />
+    Preis für grössere Events auf Anfrage.
+    <br />
+    <span class="text-muted-foreground">
+      Sollte nur die Software gemietet werden, muss bei der ersten Bestellung
+      eine Online-Schulung für mindestens einen Administrator gebucht werden.
+      Diese beläuft sich auf ca. 1 Stunde und wird zum Stundenlohn von 100 Fr.
+      verrechnet.
+    </span>
+  </div>
+</section>
