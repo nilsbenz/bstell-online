@@ -2,13 +2,8 @@ import bacon from "@/assets/images/bacon.svg";
 import beer from "@/assets/images/beer.svg";
 import popcorn from "@/assets/images/popcorn.svg";
 import sushi from "@/assets/images/sushi.svg";
+import { TabletSmartphoneIcon, WalletCardsIcon } from "lucide-react";
 import Feature from "./feature";
-import {
-  HandCoinsIcon,
-  SmartphoneIcon,
-  TabletSmartphoneIcon,
-  WalletCardsIcon,
-} from "lucide-react";
 
 const features = [
   {
