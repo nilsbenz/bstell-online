@@ -27,7 +27,7 @@ const features = [
     description: (
       <>
         Um Bstell online einzusetzen braucht es{" "}
-        <span className="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block px-1.5 shadow-md">
+        <span className="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block px-1.5 shadow-md whitespace-nowrap">
           <TabletSmartphoneIcon
             className="inline-block size-5"
             strokeWidth={2.5}
@@ -47,7 +47,7 @@ const features = [
       <>
         Um das Servicepersonal zu entlasten, können Kunden direkt über die
         Internetseite Bestellungen aufgeben und gleich{" "}
-        <span className="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block px-1.5 shadow-md">
+        <span className="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block px-1.5 shadow-md whitespace-nowrap">
           <WalletCardsIcon className="inline-block size-5" strokeWidth={2.5} />{" "}
           online bezahlen
         </span>

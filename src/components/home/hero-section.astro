@@ -1,6 +1,6 @@
 ---
 import coffee from "@/assets/images/coffee.svg";
-import { BstellIcon } from "@/lib/constants";
+import { BstellIcon, EMAIL } from "@/lib/constants";
 import { MailIcon, TabletSmartphoneIcon } from "lucide-react";
 import { buttonVariants } from "../ui/button";
 import { FadeIn } from "../ui/fade-in";
@@ -26,10 +26,10 @@ import { FadeIn } from "../ui/fade-in";
       </FadeIn>
       <FadeIn client:load delay={0.4}>
         <p class="mt-4 text-center md:text-left text-balance">
-          Mit <span
-            class="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block px-1.5 shadow-md"
-            ><BstellIcon className="inline-block size-5" strokeWidth={2.5} /> Bstell
-            online</span
+          Mit <BstellIcon className="inline-block size-5 -mr-1" />
+          <span
+            class="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block pr-1.5 pl-1 shadow-md whitespace-nowrap"
+            >Bstell online</span
           > kann an Veranstaltungen beliebiger Grösse einfach und schnell Bestellungen
           aufgenommen und abgerechnet werden.
         </p>
@@ -45,7 +45,7 @@ import { FadeIn } from "../ui/fade-in";
             Zur App
           </a>
           <a
-            href="mailto:nils.benz@icloud.com"
+            href={`mailto:${EMAIL}`}
             class={buttonVariants({ variant: "ghost" })}
           >
             <MailIcon className="size-5" strokeWidth={2.5} />

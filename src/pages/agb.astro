@@ -1,0 +1,525 @@
+---
+import { Button } from "@/components/ui/button";
+import Layout from "@/layouts/Layout.astro";
+import { EMAIL, TRANSACTION_FEE } from "@/lib/constants";
+import { DownloadIcon } from "lucide-react";
+---
+
+<Layout title="Allgemeine Geschäftsbedingungen" printOnlyMain>
+  <div class="max-w-4xl mx-auto px-6 py-20 space-y-12">
+    <div>
+      <h1 class="h3 hidden print:block mb-4">Bstell online</h1>
+      <section class="space-y-4">
+        <h2 class="h1">Allgemeine Geschäfts&shy;bedingungen für Vereine</h2>
+        <ul class="list-disc space-y-2 pl-6">
+          <li>
+            Die vorliegenden «Allgemeinen Geschäftsbedingungen für Vereine» sind
+            anwendbar auf die Beziehungen zwischen bstell.online und den
+            Vereinen (oder Geschäften, wie unten definiert). Diese gelten nicht
+            für Endkunden (oder Kunden), die unter die Bestimmungen des
+            <a
+              href="https://bstell.online/agb"
+              target="_blank"
+              rel="noreferer"
+              class="underline">„Allgemeinen Geschäftsbedingungen für Kunden“</a
+            > verwiesen.
+          </li>
+          <li>
+            Die AGB beruhen auf Schweizer Recht und gelten in der Schweiz und im
+            Ausland, sofern die Parteien sie ausdrücklich oder stillschweigend
+            anerkennen. Änderungen und Nebenabreden sind nur wirksam, wenn diese
+            von beiden Parteien schriftlich vereinbart werden.
+          </li>
+          <li>
+            Sollte eine Bestimmung dieses Vertrages unwirksam sein oder werden
+            oder der Vertrag eine Lücke enthalten, so bleibt die
+            Rechtswirksamkeit der übrigen Bestimmungen hiervon unberührt. Die
+            unwirksame Bestimmung wird dann durch eine Regelung ersetzt, die dem
+            Sinn der unwirksamen Bestimmung möglichst nahe kommt.
+          </li>
+          <li>
+            Die allgemeinen Geschäftsbedingungen wurden zuletzt am 3. Januar
+            2025 aktualisiert.
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="space-y-4">
+      <h3 class="h2">1. Begriffs&shy;bestimmungen</h3>
+      <p>
+        <b>Angebot:</b> Die vom Geschäft angebotene Reihe von Produkten und Dienstleistungen,
+        die vom Kunde über die Plattform des Geschäfts bestellt werden kann.
+      </p>
+      <p>
+        <b>Bestellung:</b> eine Bestellung des Kunden bei dem Geschäft über die Plattform
+        in Bezug auf das vom Kunden ausgewählte Angebot.
+      </p>
+      <p>
+        <b>Kunde:</b> eine natürliche oder juristische Person, die über die Plattform
+        eine Bestellung im Geschäft einreicht.
+      </p>
+      <p>
+        <b>Plattform:</b> Die Website(s), Apps und Tools von bstell.online.
+      </p>
+      <p>
+        <b>Geschäft:</b> Ein auf der Plattform aufgelistetes Unternehmen, das Produkte
+        und verwandte Artikel zur Verfügung stellt, verkauft, zubereitet, verpackt,
+        abholt und/oder anbietet, und das die Plattform zum Abschluss der Verträge
+        sowie zu deren Bezahlung nutzt.
+      </p>
+      <p>
+        <b>Geschäftsinfos:</b> Informationen über das Geschäft, unter anderem über
+        den Händler und seine Kontaktmöglichkeiten, die Produkte und Dienstleistungen,
+        die im Rahmen des Angebots zur Verfügung gestellt werden, Preise für jedes
+        einzelne Produkt (einschließlich Mehrwertsteuer), Firmenlogo, Grafiken, sowie
+        sonstige Information zum Geschäft.
+      </p>
+      <p>
+        <b>Artikel mit Altersbeschränkung:</b> Jedes Produkt, für das ein gesetzliches
+        Mindestalter vorgeschrieben ist, einschließlich, aber nicht beschränkt auf,
+        z.B. alkoholische Produkte.
+      </p>
+      <p>
+        <b>Service:</b> Die kommerziellen Dienstleistungen und/oder Tätigkeiten,
+        die dem Kunde von bstell.online angeboten werden, einschließlich der Veröffentlichung
+        des Angebots, der Ermöglichung des Vertragsabschlusses und der Übermittlung
+        von Bestellungen an das betreffende Geschäft.
+      </p>
+      <p>
+        <b>Vertrag:</b> Eine Vereinbarung zwischen dem Kunden und dem Geschäft über
+        die Plattform, bezüglich einer Bestellung inklusive Lieferung oder Abholung
+        der Bestellung.
+      </p>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">2. Identität von bstell.online</h3>
+      <p>
+        Nils Benz Software und Video
+        <br />
+        Widenstrasse 9
+        <br />
+        9444 Diepoldsau
+        <br />
+        Schweiz
+      </p>
+      <p>
+        <b>UID:</b> CHE-148.682.214
+      </p>
+      <p>
+        <b>Kontakt:</b>{" "}
+        <a href={`mailto:${EMAIL}`} class="underline">
+          {EMAIL}
+        </a>
+      </p>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">3. Handels&shy;vertretung</h3>
+      <ul class="list-disc space-y-2 pl-6">
+        <li>
+          Wir stellen Ihnen die Dienstleistungen zur Verfügung, die zur Folge
+          haben, dass rechtsverbindliche Verträge für den Verkauf von Waren an
+          Kunden abgeschlossen werden. Wir übernehmen beim Abschluss dieser
+          Verträge die Rolle eines Vermittlers in Ihrem Namen. Wir sind keine
+          Vertragspartei.
+        </li>
+        <li>
+          Sie erkennen an und nehmen zur Kenntnis, dass bstell.online auch
+          andere Restaurants, Geschäfte oder Gewerbetreibende, die Ihre direkten
+          Konkurrenten sein können, vertritt und in deren Namen handle.
+        </li>
+      </ul>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">4. Unsere Pflichten</h3>
+      <p>Wir werden Ihnen Folgendes zur Verfügung stellen:</p>
+      <ul class="list-disc space-y-2 pl-6">
+        <li>
+          einen Bestellbearbeitungsdienst, der es dem Servicepersonal und den
+          Kunden ermöglicht, über die Plattform Bestellungen bei Ihnen
+          aufzugeben,
+        </li>
+        <li>
+          andere Dienstleistungen, die zu gegebener Zeit vereinbart werden
+          können.
+        </li>
+      </ul>
+      <p>
+        Wir werden Ihnen die im Anmeldeformular oder anderweitig angegebenen
+        Gebühren in Rechnung stellen.
+      </p>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">5. Gewähr&shy;leistung</h3>
+      <ul class="list-disc space-y-2 pl-6">
+        <li>
+          Der Verkäufer (wir) bemüht sich um eine gute Verfügbarkeit von
+          bstell.online und unternimmt angemessene Vorkehrungen um bstell.online
+          vor Eingriffen Dritter zu schützen.
+        </li>
+        <li>
+          Er kann jedoch keine Gewährleistung für ein unterbruchs- und
+          störungsfreies Funktionieren von bstell.online und den angebotenen
+          Dienstleistungen geben. Der Verkäufer leistet keine Gewähr für die
+          sachliche und inhaltliche Korrektheit, Vollständigkeit und
+          Zuverlässigkeit oder Qualität der publizierten oder übermittelten
+          Informationen und Unterlagen. Er kann zudem keine Gewährleistung geben
+          für Nicht - Spamming, schädliche Software, Spyware, Hacker oder
+          Phishing-Angriffe etc. die die Benutzung der Dienstleistung
+          beeinträchtigen, die Infrastruktur (z.B. Endgeräte, PC, Drucker) des
+          Kunden beschädigen oder ihn anderweitig schädigen. Ein allfälliges
+          Problem oder ein Defekt ist dem Verkäufer umgehend anzuzeigen.
+        </li>
+      </ul>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">6. Ihre Pflichten</h3>
+      <ol class="list-decimal space-y-2 pl-6">
+        <li>
+          Sie müssen uns die von uns angeforderten Partnerinformationen zukommen
+          lassen, und Sie müssen gewährleisten, dass die Partnerinformationen
+          jederzeit korrekt, gesetzeskonform und auf dem neuesten Stand sind.
+          Wir behalten uns das Recht vor, unsere Dienstleistungen für Sie
+          auszusetzen, bis Sie dies tun. Wenn wir feststellen, dass die
+          bereitgestellten Partnerinformationen illegale Inhalte wie nicht
+          konforme Produktinformationen oder gefälschte Waren enthalten, können
+          wir unsere Dienstleistungen für Sie nach angemessener Vorwarnung
+          aussetzen. Die von Ihnen vorgelegten Partnerinformationen werden gemäß
+          behördlichen Anforderungen vervielfältigt und den Kunden auf der
+          Plattform angezeigt. Es bleibt uns vorbehalten, offensichtliche
+          Rechtschreib- oder Formatierungsfehler in den wiedergegebenen
+          Partnerinformationen zu korrigieren. Sie bleiben jedoch in vollem
+          Umfang verantwortlich für die Richtigkeit dieser Partnerinformationen
+          und die Gewährleistung, dass sie jederzeit auf dem neuesten Stand
+          sind.
+        </li>
+        <li>
+          Sie sind berechtigt, wo dies angemessen und möglich ist, Änderungen an
+          bestimmten Teilen der Partnerinformationen und Ihrem Eintrag auf der
+          Plattform selbst vorzunehmen und zu verwalten. Wir verpflichten uns
+          nicht, die bereitgestellten Partnerinformationen oder vorgenommenen
+          Änderungen zu überprüfen und sind nicht dafür verantwortlich oder
+          haftbar, und Sie bleiben zu jeder Zeit voll verantwortlich und haftbar
+          für alle bereitgestellten Partnerinformationen oder vorgenommenen
+          Änderungen, die Richtigkeit und Vollständigkeit der
+          Partnerinformationen und die Einhaltung aller diesbezüglich geltenden
+          Gesetze und Vorschriften, einschließlich (aber nicht beschränkt auf)
+          alle Anforderungen in Bezug auf Alkohol, Lebensmittelsicherheit,
+          Allergene und Zusatzstoffe und anderer Anforderungen, wie in der
+          Vereinbarung dokumentiert. In Fällen, in denen es nicht möglich oder
+          nicht gestattet ist, solche Änderungen selbst vorzunehmen, müssen Sie
+          uns die Änderungen der Partnerinformationen mindestens vierzehn (14)
+          Tage vor ihrem geplanten Inkrafttreten mitteilen, damit wir die auf
+          der Plattform angezeigten geänderten Partnerinformationen bearbeiten
+          können.
+        </li>
+        <li>
+          Wenn uns aufgrund einer Beschwerde über Ihre Waren, Dienstleistungen
+          oder Ihr Verhalten Kosten entstanden sind (das gilt auch für den Fall,
+          dass Sie eine Bestellung abgelehnt haben), sind Sie verpflichtet, uns
+          diese Kosten in voller Höhe zu erstatten.
+        </li>
+        <li>
+          Die Software der Verbindungsmethode bleibt stets unser Eigentum oder
+          das Eigentum unserer Lizenzgeber. Wir können die Hardware der
+          Verbindungsmethode oder die Software der Verbindungsmethode jederzeit
+          aktualisieren oder ändern. Außerdem sind wir berechtigt, jederzeit aus
+          jedem rechtmäßigen Grund aus der Ferne auf die Software der
+          Verbindungsmethode zuzugreifen, insbesondere um die Software zu
+          aktualisieren oder Software-Wartung durchzuführen. Sie sind zur
+          Nutzung dieser Software im Rahmen einer Endbenutzerlizenz berechtigt,
+          über die wir Sie zu gegebener Zeit in Kenntnis setzen. Sie dürfen die
+          Software der Verbindungsmethode nicht rückentwickeln, dekompilieren,
+          disassemblieren oder anderweitig unsachgemäß nutzen.
+        </li>
+        <li>
+          Sie sind für die Qualität der Waren verantwortlich und stellen sicher,
+          dass sie von guter, handelsüblicher Qualität, nicht abgelaufen und für
+          den Verzehr und/oder Gebrauch sicher sind.
+        </li>
+        <li>
+          Jeder Partner, der Waren auflistet und verkauft, für die eine Lizenz
+          erforderlich ist (z.B. der Verkauf von alkoholischen Produkten oder
+          warmen Speisen oder Getränken zu bestimmten Zeiten), oder der
+          bestimmten Regeln unterliegt, wie z. B. Zeit- oder
+          Mengenbeschränkungen, Käuferüberprüfungen oder Altersbeschränkungen
+          (je nach Fall), muss sicherstellen, dass er die erforderlichen
+          Lizenzen besitzt oder sich an die besagten Regeln hält, und wird uns
+          diese Angaben auf Anfrage zur Verfügung stellen. Wir sind nicht
+          verantwortlich für die Einhaltung von rechtlichen Anforderungen oder
+          Bedingungen, die Ihnen durch spezifische, allgemeine, lokale,
+          regionale, nationale oder andere Gesetze und Vorschriften auferlegt
+          werden.
+        </li>
+      </ol>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">7. Pflichten gegenüber Kunden</h3>
+      <ol class="list-decimal space-y-2 pl-6">
+        <li>
+          Sie verpflichten sich, die Waren rechtzeitig zu empfangen, zu
+          verarbeiten, vorzubereiten und für die Lieferung an den Kunden zu
+          verpacken, wobei Sie Fachkenntnisse, Sorgfalt, Gewissenhaftigkeit und
+          Qualität im Einklang mit den besten Industriepraktikum und allen
+          geltenden Gesetzen, Regeln, Anforderungen und Vorschriften anwenden.
+        </li>
+        <li>
+          Die in der Bestellung enthaltenen Waren müssen dem entsprechen, was in
+          der Bestellung angegeben ist, so wie Sie sie erhalten haben, ohne
+          Fehler und in guter und angemessener Qualität, wie in der Beschreibung
+          der Bestellung angegeben. Die von Kunden bestellten Waren werden von
+          Ihnen am Standort und mit jeglicher angemessenen Sorgfalt und
+          Sachkenntnis zubereitet, behandelt und verpackt, um sicherzustellen,
+          dass die Waren:
+        </li>
+        <ul class="list-disc space-y-2 pl-8">
+          <li>unbedenklich zu essen sind,</li>
+          <li>dem erwarteten Standard entsprechen</li>
+          <li>
+            hygienisch zubereitet, verpackt, in einer Weise enthalten (z. B.
+            angemessene Temperatur- und Umweltgrenzwerte, angemessene Trennung
+            der Produkte), die ihre Qualität oder Sicherheit beim Transport zum
+            Kunden nicht beeinträchtigt, transportiert (sofern zutreffend) und
+            aufbewahrt werden,
+          </li>
+          <li>
+            in Übereinstimmung mit zusätzlichen angemessenen Anweisungen des
+            Kunden zubereitet wurden (mit den in der Bestellung enthaltenen
+            Kundenkommentaren),
+          </li>
+          <li>
+            mit den korrekten Zutaten zubereitet wurden, wie dem Kunden
+            gegenüber kommuniziert, und
+          </li>
+          <li>
+            bei Produkten mit Altersbeschränkung, getrennt verpackt und leicht
+            erkennbar sind.
+          </li>
+        </ul>
+        <li>
+          Sie stellen sicher, dass potenziell gefährliche und leicht
+          verderbliche Lebensmittel für die Lieferung ordnungsgemäß zubereitet
+          und verpackt werden, um eine Kreuzkontamination zu vermeiden (d. h.
+          Trennung von rohen und gekochten Lebensmitteln, Fleisch und
+          Nicht-Fleisch, warmen/heißen und kalten/gefrorenen Lebensmitteln,
+          allergenfreien Lebensmitteln und allergenfreien Lebensmitteln,
+          Lebensmitteln für Menschen und Haustieren, Lebensmitteln und
+          Haushaltschemikalien und Körperpflegeprodukten usw.) und um die
+          Temperatur während des Transports zu kontrollieren.
+        </li>
+        <li>
+          Sie bestätigen und erklären, dass, sobald ein Kunde eine Bestellung
+          über die Plattform aufgegeben hat, ein Vertrag über die Lieferung von
+          Waren zwischen Ihnen und dem Kunden zustande gekommen ist, und dass
+          Sie eine von einem Kunden aufgegebene Bestellung entsprechend den
+          Bestelldetails erfüllen müssen. Wenn Sie eine erhaltene Bestellung
+          nicht innerhalb eines angemessenen Zeitrahmens zubereiten und
+          ausliefern (sofern Sie für die Lieferung zuständig sind) - wobei die
+          Lieferung innerhalb von maximal einer Stunde nach Ablauf der
+          Lieferzeit als angemessen betrachtet wird - oder wenn Sie anderweitig
+          Ihren Verpflichtungen aus dieser Vereinbarung nicht nachkommen, können
+          wir sämtliche uns angemessen erscheinenden Maßnahmen ergreifen
+          (einschließlich einer Rückerstattung an den Kunden in Ihrem Namen und
+          auf Ihre Kosten), um eine negative Kundenerfahrung zu entschärfen.
+        </li>
+        <li>
+          Falls die Bestellung Alkohol oder andere Produkte mit
+          Altersbeschränkung enthält, erkennen Sie an, dass Sie allein dafür
+          verantwortlich sind zu gewährleisten, dass der Kunde das entsprechende
+          gesetzliche Alter für den Kauf von Waren mit Altersbeschränkung
+          überschritten hat. Sie sind verpflichtet, den Kunden aufzufordern,
+          sich bei der Lieferung oder Abholung gemäß geltendem Recht
+          auszuweisen. Ist der Kunde nicht in der Lage, sich angemessen
+          auszuweisen oder erfüllt er nicht die Mindestaltersvoraussetzungen,
+          müssen Sie die Lieferung der betreffenden Produkte an den Kunden
+          ablehnen.
+        </li>
+        <li>
+          Sie können eine Bestellung unter folgenden Umständen stornieren:
+        </li>
+        <ul class="list-disc space-y-2 pl-8">
+          <li>
+            der Kunde hat die Bestellung mit falschen Kontakt- oder
+            Adressangaben aufgegeben,
+          </li>
+          <li>
+            Ihre Waren sind nicht mehr verfügbar und der Kunde akzeptiert keine
+            von Ihnen angebotene Alternative oder
+          </li>
+          <li>ein Ereignis Höherer Gewalt betrifft Ihren Standort.</li>
+        </ul>
+      </ol>
+      <p>
+        Sie müssen Ihre Pflichten unter dieser Vereinbarung einhalten und
+        sicherstellen, dass auch Ihre Mitarbeiter, Vertreter und Auftragnehmer
+        diese einhalten.
+      </p>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">8. Zahlungen von Kunden</h3>
+      <ul class="list-disc space-y-2 pl-6">
+        <li>
+          Die Online-Zahlungen von Kunden gehen direkt an das Geschäft. Wir
+          übernehmen keine Haftung für die Zahlung von Kunden an Sie.
+        </li>
+        <li>
+          Wir verrechnen Ihnen zusätzlich zum Kaufpreis der Lizenz eine Gebühr
+          von {TRANSACTION_FEE}% des Bestellwerts bei Onlinebestellungen für die
+          Nutzung unserer Dienstleistungen. Diese erfolgt pro erfolgreiche
+          Zahlung und wird automatisch, zusätzlich zu den Gebühren vom
+          Zahlungsanbieter, abgezogen. Das Geschäft hat die Möglichkeit, einen
+          gewissen Anteil der Gebühren auf den Kunden zu übertragen.
+        </li>
+      </ul>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">9. Geistiges Eigentum</h3>
+      <ul class="list-disc space-y-2 pl-6">
+        <li>
+          Es ist Ihnen nicht gestattet, unsere geistigen Eigentumsrechte in
+          jedwedem Zusammenhang zu nutzen, für den wir Ihnen keine ausdrückliche
+          Genehmigung erteilt haben. Es ist Ihnen nicht gestattet, unsere
+          geistigen Eigentumsrechte auf Verpackungen, Kleidung, Schreibwaren,
+          Fahrzeugen usw. zu verwenden, sofern Sie nicht unsere vorherige
+          schriftliche Genehmigung erhalten haben. Sie sind berechtigt, mit
+          unserem Markenzeichen versehene Elemente zu nutzen, die wir oder
+          unsere Lieferanten Ihnen bereitgestellt haben, aber Sie dürfen sie nur
+          entsprechend unseren Anweisungen nutzen.
+        </li>
+        <li>
+          Mit dem Abschluss dieser Vereinbarung mit uns bestätigen Sie uns
+          gegenüber, dass Sie berechtigt sind, Ihren Markennamen, Ihre Logos und
+          sämtliche damit verbundenen Informationen und Designs auf der
+          Plattform zu nutzen, und dass die Nutzung Ihres Markennamens, Ihrer
+          Logos und sämtlicher damit verbundenen Informationen und Designs Sie
+          nicht in Konflikt mit anderen Personen bringt. Sie gewähren uns eine
+          gebührenfreie Lizenz zur Nutzung Ihres Namens, Logos und jeglichen
+          anderen geistigen Eigentums (inklusive des geistigen Eigentums an
+          allen Fotos oder Partnerinformationen). Sie gewähren uns zudem das
+          Recht, Unterlizenzen an Dritte zu vergeben, damit wir unseren
+          Pflichten aus dieser Vereinbarung nachkommen können. Allerdings bleibt
+          Ihr geistiges Eigentum jederzeit Ihr Eigentum.
+        </li>
+      </ul>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">10. Vertragsabschluss</h3>
+      <ul class="list-disc space-y-2 pl-6">
+        <li>
+          Der Kauf einer Lizenz für bstell.online gilt als verbindlich, sobald
+          die entsprechende Lizenz vom Käufer bezahlt worden ist.
+        </li>
+        <li>
+          Die Bestellung wird erst nach Zahlungseingang bearbeitet und gilt nur
+          für einen einzigen Event. Sollte der Käufer die Lizenz für mehrere
+          Events nutzen wollen, muss er eine entsprechende Anzahl von Lizenzen
+          erwerben. Der Verkäufer behält sich das Recht vor, bei Missbrauch die
+          Lizenz oder das Geschäft ohne Rückvergütung zu sperren.
+        </li>
+      </ul>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">11. Lizenz</h3>
+      <ul class="list-disc space-y-2 pl-6">
+        <li>
+          Der Verkäufer gewährt dem Kunden das Recht, die Dokumente der
+          entsprechenden Vertragsboxen zu nutzen. Diese Nutzungsrechte sind
+          nicht-exklusive, unübertragbar und auf die Nutzung durch den Käufer
+          beschränkt.
+        </li>
+        <li>
+          Insbesondere darf eine Lizenz nur für einen einzigen Event verwendet,
+          und nicht an Dritte weitergegeben werden.
+        </li>
+      </ul>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">12. Lieferung</h3>
+      <ul class="list-disc space-y-2 pl-6">
+        <li>
+          Der Käufer (sie) erkennt, dass es sich bei einer Lizenz für die
+          Nutzung von bstell.online um ein digitales Produkt handelt, welches
+          nicht auf einem physischen Datenträger an ihn abgegeben wird.
+        </li>
+        <li>Der Käufer verzichtet daher auf sein Recht auf Rückgabe.</li>
+      </ul>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">13. Haftung</h3>
+      <p>
+        Informationen in den Kursen werden vom Verkäufer nach bestem Wissen und
+        Gewissen übermittelt. Für eventuelle Fehler in den Informationen und
+        Unterlagen haftet der Verkäufer bei Vorsatz oder Fahrlässigkeit. Der
+        Verkäufer haftet jedoch nicht für daraus resultierende Schäden und
+        Mängelfolgeschäden.
+      </p>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">14. Höhere Gewalt</h3>
+      <p>
+        Weder Sie noch wir sind gegenüber der jeweils anderen Vertragspartei
+        haftbar für Verzögerungen oder Nichterfüllung der jeweiligen Pflichten
+        aus dieser Vereinbarung, die sich aus einem Ereignis Höherer Gewalt
+        ergeben.
+      </p>
+    </section>
+    <section class="space-y-4">
+      <h3 class="h2">15. Vertraulichkeit und Datenschutz</h3>
+      <ol class="list-decimal space-y-2 pl-6">
+        <li>
+          <b>Allgemeines.</b> Diese Datenschutzerklärung gilt für alle Dienste, die
+          wir anbieten, und beschreibt, wie wir Ihre persönlichen Daten verarbeiten.
+          Sie bezieht sich auf alle Personen, die unsere Website nutzen.
+        </li>
+        <li>
+          <b>Datenerhebung.</b> Wir sammeln nur solche Daten, die für die Bereitstellung
+          unseres Dienstes notwendig sind. Zu den personenbezogenen Daten gehören
+          Name und E-Mail-Adresse. Diese Informationen werden erhoben, wenn Sie sich
+          registrieren, eine Bestellung aufgeben oder andere Dienste in Anspruch
+          nehmen.
+        </li>
+        <li>
+          <b>Zweck der Datenerhebung.</b> Wir verwenden die gesammelten Daten ausschließlich
+          zur Bearbeitung und Lieferung Ihrer Bestellungen. Dies schliesst die Weitergabe
+          der Mailadresse an stripe.com, den verwendeten Zahlungsdienstleister, ein.
+        </li>
+        <li>
+          <b>Weitergabe von Daten.</b> Wir werden Ihre Daten nicht ohne Ihre ausdrückliche
+          Zustimmung an Dritte weitergeben. Ausnahmen gelten, wenn dies zur Erfüllung
+          gesetzlicher Pflichten erforderlich ist oder im Zusammenhang mit der Abwicklung
+          Ihrer Bestellung steht.
+        </li>
+        <li>
+          <b>Pflichten des Käufers.</b> Der Käufer verpflichtet sich, sein Passwort
+          sicher aufzubewahren, so dass es nicht in die Hände von unbefugten Dritten
+          gelangt.<br />
+          Sie und wir (und unsere jeweiligen leitenden Angestellten, Mitarbeiter,
+          Vertreter und Berater) verpflichten uns, die Grundsätze des Datenschutzrechts
+          zu befolgen, insbesondere Daten nicht an Dritte weiterzugeben oder zu verkaufen.
+          Ausserdem sollen die Daten für nicht durch diese Vereinbarung vorgesehene
+          Zwecke weder zu verwenden noch offenzulegen.
+        </li>
+      </ol>
+    </section>
+    <div class="flex justify-center">
+      <Button className="gap-1.5 print:hidden" id="print-button">
+        <DownloadIcon className="size-5" strokeWidth={2.25} />
+        Drucken
+      </Button>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline>
+  function printWindow() {
+    try {
+      if (!document.execCommand("print", false, undefined)) {
+        window.print();
+      }
+    } catch {
+      window.print();
+    }
+  }
+  document
+    .getElementById("print-button")
+    .addEventListener("click", printWindow);
+</script>

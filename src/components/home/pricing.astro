@@ -1,4 +1,5 @@
 ---
+import { EMAIL, EVENT_LICENSE_PRICE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { MailIcon, PrinterIcon } from "lucide-react";
 import { buttonVariants } from "../ui/button";
@@ -51,13 +52,15 @@ import { FadeIn } from "../ui/fade-in";
           </ul>
         </CardContent>
         <div class="pt-8 pb-16 space-y-1">
-          <p class="text-center text-5xl font-semibold">100 Fr.*</p>
+          <p class="text-center text-5xl font-semibold">
+            {EVENT_LICENSE_PRICE} Fr.*
+          </p>
           <p class="text-center font-medium text-sm">
             + 1% vom Umsatz aus Online-Bestellungen
           </p>
         </div>
         <a
-          href="mailto:nils.benz@icloud.com"
+          href={`mailto:${EMAIL}`}
           class={cn(
             buttonVariants({ variant: "outline", size: "lg" }),
             "absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2"
@@ -73,7 +76,7 @@ import { FadeIn } from "../ui/fade-in";
         <CardTitle>
           Software +{" "}
           <span
-            class="bg-gradient-to-br from-teal-400 to-teal-500 inline-block px-1.5 shadow-md"
+            class="bg-gradient-to-br from-teal-400 to-teal-500 inline-block px-1.5 shadow-md whitespace-nowrap"
           >
             <PrinterIcon className="inline-block size-5" strokeWidth={3} />{" "}
             Hardware
@@ -103,7 +106,7 @@ import { FadeIn } from "../ui/fade-in";
       </CardContent>
       <div class="pt-8 pb-16 space-y-1">
         <p class="text-center text-5xl font-semibold">
-          <span class="text-base font-medium">ab</span> 300 Fr.*
+          <span class="text-base font-medium">ab</span> 400 Fr.*
         </p>
         <p class="text-center font-medium text-sm">
           genauere Infos{" "}
@@ -123,15 +126,10 @@ import { FadeIn } from "../ui/fade-in";
     </FadeIn>
   </div>
   <div class="col-span-full mt-20">
-    * Preis pro Event bis zu einem Umsatz von 15'000 Fr.
-    <br />
-    Preis für grössere Events auf Anfrage.
+    * Preis pro Event.
     <br />
     <span class="text-muted-foreground">
-      Sollte nur die Software gemietet werden, muss bei der ersten Bestellung
-      eine Online-Schulung für mindestens einen Administrator gebucht werden.
-      Diese beläuft sich auf ca. 1 Stunde und wird zum Stundenlohn von 100 Fr.
-      verrechnet.
+      Preis für grössere Veranstaltungen mit mehreren Speisekarten auf Anfrage.
     </span>
   </div>
 </section>

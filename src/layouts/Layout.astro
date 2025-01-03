@@ -1,6 +1,6 @@
 ---
 import { BottomNav, Footer, Header } from "@/components/layout";
-import { seoConfig } from "@/lib/utils";
+import { cn, seoConfig } from "@/lib/utils";
 import { SEO } from "astro-seo";
 import { ViewTransitions } from "astro:transitions";
 import { pwaInfo } from "virtual:pwa-info";
@@ -10,9 +10,10 @@ import "@fontsource-variable/rubik";
 
 interface Props {
   title: string;
+  printOnlyMain?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, printOnlyMain } = Astro.props;
 ---
 
 <!doctype html>
@@ -74,7 +75,7 @@ const { title } = Astro.props;
     {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
     <script src="/src/pwa.ts"></script>
   </head>
-  <body class="flex flex-col">
+  <body class={cn("flex flex-col", printOnlyMain && "print-only-main")}>
     <Header />
     <main class="grow">
       <slot />

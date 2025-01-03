@@ -1,5 +1,5 @@
 ---
-import { BstellIcon } from "@/lib/constants";
+import { BstellIcon, EMAIL } from "@/lib/constants";
 ---
 
 <footer class="bg-card">
@@ -7,7 +7,7 @@ import { BstellIcon } from "@/lib/constants";
     class="flex flex-col sm:flex-row flex-wrap justify-between max-w-4xl mx-auto px-6 py-12"
   >
     <div class="flex items-center self-start w-full md:w-auto">
-      <BstellIcon className="text-primary mr-2 size-8" strokeWidth={2.25} />
+      <BstellIcon className="mr-2 size-8" />
       <div>
         <p class="text-lg font-semibold leading-none">Bstell online</p>
         <p class="text-xs">
@@ -18,7 +18,7 @@ import { BstellIcon } from "@/lib/constants";
     <div class="mt-6 md:mt-0">
       <p class="font-semibold mb-1">Kontakt</p>
       <p>
-        <a href="mailto:nils.benz@icloud.com"> nils.benz@icloud.com </a>
+        <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
       </p>
     </div>
     <div class="mt-6 md:mt-0 w-auto sm:w-1/2 md:w-auto">

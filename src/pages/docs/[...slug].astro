@@ -1,0 +1,49 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("docs");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const docsEntries = await getCollection("docs");
+const groups = Array.from(
+  new Set(docsEntries.map((entry) => entry.data.group))
+);
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <div class="flex max-w-4xl px-6 gap-6 py-12 mx-auto w-full">
+    <div>
+      <aside class="w-40 sticky top-28">
+        <nav>
+          <ul>
+            {
+              groups.map((group) => (
+                <>
+                  <li class="font-medium">{group}</li>
+                  {docsEntries
+                    .filter((e) => e.data.group === group)
+                    .map((e) => (
+                      <li>
+                        <a href={`/docs/${e.slug}`}>{e.data.title}</a>
+                      </li>
+                    ))}
+                </>
+              ))
+            }
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <section class="w-full">
+      <Content />
+    </section>
+  </div>
+</Layout>

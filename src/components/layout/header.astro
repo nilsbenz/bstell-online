@@ -1,5 +1,5 @@
 ---
-import { BstellIcon } from "@/lib/constants";
+import { BstellIcon, EMAIL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { MailIcon } from "lucide-react";
 import { buttonVariants } from "../ui/button";
@@ -18,10 +18,7 @@ import { buttonVariants } from "../ui/button";
         "flex items-center gap-2"
       )}
     >
-      <BstellIcon
-        className="!size-8 shrink-0 text-primary"
-        strokeWidth={2.25}
-      />
+      <BstellIcon className="size-8 shrink-0" />
       <h1 class="font-medium text-xl">Bstell online</h1>
     </a>
     <div class="flex gap-2">
@@ -48,7 +45,7 @@ import { buttonVariants } from "../ui/button";
         </a>
       </nav>
       <a
-        href="mailto:nils.benz@icloud.com"
+        href={`mailto:${EMAIL}`}
         class={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-9")}
         aria-label="Kontakt"
       >

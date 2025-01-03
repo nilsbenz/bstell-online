@@ -8,6 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "generate-content-types": "astro sync",
     "generate-pwa-assets": "pwa-assets-generator"
   },
   "dependencies": {

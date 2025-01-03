@@ -9,9 +9,9 @@
     --card-foreground: 20 14% 4%;
     --popover: 60 9% 98%;
     --popover-foreground: 20 14% 4%;
-    --primary: 201 96% 32%;
+    --primary: 174.7 83.9% 31.6%;
     --primary-foreground: 60 9% 98%;
-    --secondary: 60 5.5% 94%;
+    --secondary: 351.3 94.5% 71.4%;
     --secondary-foreground: 20 14% 4%;
     --muted: 60 5.5% 94%;
     --muted-foreground: 25 5% 45%;
@@ -43,16 +43,14 @@
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
-    font-feature-settings:
-      "rlig" 1,
-      "calt" 1;
+    font-feature-settings: "rlig" 1, "calt" 1;
     min-height: 100dvh;
   }
   ::selection {
     background-color: hsl(var(--primary) / 0.4);
   }
   .bg-primary ::selection {
-    background-color: hsl(var(--secondary) / 0.4);
+    background-color: hsl(var(--primary-foreground) / 0.2);
   }
   input[type="time"]::-webkit-calendar-picker-indicator {
     background: none;
@@ -89,6 +87,13 @@
       hsl(var(--background)) 1px
     );
     background-size: 4px 4px;
+  }
+
+  @media print {
+    .print-only-main header,
+    .print-only-main footer {
+      display: none;
+    }
   }
 }
 
