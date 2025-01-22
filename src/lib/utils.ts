@@ -6,7 +6,8 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-const description = "Bstell online – das Kassensystem für Vereine.";
+const description =
+  "Das Kassensystem für Vereinsanlässe. Bestellungen online per QR-Code oder beim Servicepersonal.";
 
 export const seoConfig = {
   baseURL: "https://info.bstell.online",
@@ -32,7 +33,7 @@ export const manifest: Partial<ManifestOptions> = {
   background_color: "#ffffff",
   display: "standalone",
   orientation: "portrait",
-  start_url: ".",
+  start_url: "./docs/?utm_source=pwa",
   scope: ".",
   icons: [
     {

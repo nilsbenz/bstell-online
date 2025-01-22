@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "generate-content-types": "astro sync",
-    "generate-pwa-assets": "pwa-assets-generator"
+    "generate-pwa-assets": "pwa-assets-generator",
+    "postinstall": "astro sync"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -30,14 +31,19 @@
     "tailwind-merge": "^2.5.4",
     "tailwindcss": "^3.4.14",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "@astrojs/sitemap": "^3.2.1",
+    "@tailwindcss/typography": "^0.5.16",
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vite-pwa/astro": "^0.4.3",
     "astro-compress": "^2.3.5",
     "astro-seo": "^0.8.4",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.10",
     "vite-plugin-pwa": "^0.20.5",
     "workbox-window": "^7.3.0"
   }

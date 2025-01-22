@@ -13,16 +13,16 @@ import {
 import { FadeIn } from "../ui/fade-in";
 ---
 
-<section class="max-w-4xl mx-auto px-6 scroll-mt-24" id="kosten">
-  <h2 class="text-3xl sm:text-4xl font-semibold">Und was kostet es?</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-20 mt-8 md:mt-12">
+<section class="mx-auto max-w-4xl scroll-mt-24 px-6" id="preise">
+  <h2 class="text-3xl font-semibold sm:text-4xl">Und was kostet es?</h2>
+  <div class="mt-8 grid grid-cols-1 gap-x-8 gap-y-20 md:mt-12 md:grid-cols-2">
     <FadeIn client:load className="h-full" delay={0.3}>
-      <Card className="flex flex-col relative h-full">
+      <Card className="relative flex h-full flex-col">
         <CardHeader>
           <CardTitle>
             Nur die{" "}
             <span
-              class="bg-gradient-to-br from-rose-500 to-pink-600 inline-block text-transparent bg-clip-text"
+              class="inline-block bg-gradient-to-br from-rose-500 to-pink-600 bg-clip-text text-transparent"
             >
               Software
             </span>
@@ -33,7 +33,7 @@ import { FadeIn } from "../ui/fade-in";
           </CardDescription>
         </CardHeader>
         <CardContent className="grow">
-          <ul class="list-disc pl-6 [&>li]:font-medium space-y-2">
+          <ul class="list-disc space-y-2 pl-6 [&>li]:font-medium">
             <li>Alle Features der Software, z.B.:</li>
             <ul class="list-disc pl-6">
               <li>Bestellungen vom Personal</li>
@@ -51,11 +51,11 @@ import { FadeIn } from "../ui/fade-in";
             </ul>
           </ul>
         </CardContent>
-        <div class="pt-8 pb-16 space-y-1">
+        <div class="space-y-1 pb-16 pt-8">
           <p class="text-center text-5xl font-semibold">
             {EVENT_LICENSE_PRICE} Fr.*
           </p>
-          <p class="text-center font-medium text-sm">
+          <p class="text-center text-sm font-medium">
             + 1% vom Umsatz aus Online-Bestellungen
           </p>
         </div>
@@ -71,12 +71,12 @@ import { FadeIn } from "../ui/fade-in";
         </a>
       </Card>
     </FadeIn>
-    <FadeIn client:load className="p-0.5 flex flex-col relative" delay={0.5}>
+    <FadeIn client:load className="relative flex flex-col p-0.5" delay={0.5}>
       <CardHeader>
         <CardTitle>
           Software +{" "}
           <span
-            class="bg-gradient-to-br from-teal-400 to-teal-500 inline-block px-1.5 shadow-md whitespace-nowrap"
+            class="inline-block whitespace-nowrap bg-gradient-to-br from-teal-400 to-teal-500 px-1.5 shadow-md"
           >
             <PrinterIcon className="inline-block size-5" strokeWidth={3} />{" "}
             Hardware
@@ -88,7 +88,7 @@ import { FadeIn } from "../ui/fade-in";
         </CardDescription>
       </CardHeader>
       <CardContent className="grow">
-        <ul class="list-disc pl-6 [&>li]:font-medium space-y-2">
+        <ul class="list-disc space-y-2 pl-6 [&>li]:font-medium">
           <li>Alle Features der Software</li>
           <li>Support bei Bedarf:</li>
           <ul class="list-disc pl-6">
@@ -104,11 +104,11 @@ import { FadeIn } from "../ui/fade-in";
           </ul>
         </ul>
       </CardContent>
-      <div class="pt-8 pb-16 space-y-1">
+      <div class="space-y-1 pb-16 pt-8">
         <p class="text-center text-5xl font-semibold">
           <span class="text-base font-medium">ab</span> 400 Fr.*
         </p>
-        <p class="text-center font-medium text-sm">
+        <p class="text-center text-sm font-medium">
           genauere Infos{" "}
           <a href="/downloads/pricing_au.pdf" class="underline"> hier </a>
         </p>

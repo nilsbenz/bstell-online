@@ -29,18 +29,12 @@ const faqItems = [
     answer:
       "Nein. Das Personal nimmt die Bestellungen mit dem eigenen Smartphone auf.",
   },
-  {
-    question:
-      "Wieso kostet die Software für Anlässe mit über 15'000 CHF Umsatz mehr?",
-    answer:
-      "Die Software wurde ursprünglich dafür entwickelt, auch kleinen Vereinen eine kostengünstige Möglichkeit zu bieten, Bestellungen aufzunehmen. Bei Anlässen mit einem Umsatz von mehr als 15'000 CHF wird davon ausgegangen, dass der Verein genug finanzielle Mittel hat, um einen höheren Preis zu bezahlen.",
-  },
 ];
 
 export default function FAQ() {
   return (
-    <section className="max-w-4xl mx-auto px-6 scroll-mt-24 space-y-8" id="faq">
-      <h2 className="text-3xl sm:text-4xl font-semibold">
+    <section className="mx-auto max-w-4xl scroll-mt-24 space-y-8 px-6" id="faq">
+      <h2 className="text-3xl font-semibold sm:text-4xl">
         Oft gestellte Fragen
       </h2>
       <div className="flex gap-4">
@@ -52,7 +46,7 @@ export default function FAQ() {
             </AccordionItem>
           ))}
         </Accordion>
-        <FadeIn delay={0.3} className="shrink-0 hidden md:block">
+        <FadeIn delay={0.3} className="hidden shrink-0 md:block">
           <img src={fries.src} alt="" className="size-80 animate-move-y" />
         </FadeIn>
       </div>

@@ -2,7 +2,6 @@
 import { BottomNav, Footer, Header } from "@/components/layout";
 import { cn, seoConfig } from "@/lib/utils";
 import { SEO } from "astro-seo";
-import { ViewTransitions } from "astro:transitions";
 import { pwaInfo } from "virtual:pwa-info";
 
 import "@/styles/main.css";
@@ -69,8 +68,6 @@ const { title, printOnlyMain } = Astro.props;
       content="/apple-touch-icon-180x180.png"
     />
     <meta name="theme-color" content="#ffffff" />
-
-    <ViewTransitions />
 
     {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
     <script src="/src/pwa.ts"></script>

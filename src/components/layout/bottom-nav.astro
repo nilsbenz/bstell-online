@@ -1,29 +1,57 @@
 ---
 import { BstellIcon } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { getCollection } from "astro:content";
 import { buttonVariants } from "../ui/button";
+import DocsNavDrawer from "./docs-nav-drawer";
+
+const isDocs = Astro.url.pathname.startsWith("/docs");
+const docsEntries = await getCollection("docs");
+const currentEntry = docsEntries.find(
+  (entry) => entry.slug === Astro.url.pathname.substring(6)
+);
 ---
 
 <nav
-  class="sm:hidden fixed bottom-3 left-3 right-3 z-40 font-medium backdrop-blur dotted-bg shadow-lg rounded-full flex [&>*]:grow max-w-sm mx-auto p-0.5 border-2 ring-2 ring-inset ring-background"
+  class="dotted-bg fixed bottom-3 left-3 right-3 z-40 mx-auto flex max-w-sm rounded-full border-2 p-0.5 font-medium shadow-lg ring-2 ring-inset ring-background backdrop-blur sm:hidden [&>*]:grow"
 >
-  <a href="/" class={cn(buttonVariants(), "px-2 mr-2")} aria-label="Startseite">
-    <BstellIcon className="size-6 shrink-0" />
-  </a>
   <a
-    href="#funktionen"
-    class={cn(buttonVariants({ variant: "ghost" }), "px-3")}
+    href="/"
+    class={cn(buttonVariants(), "w-16 px-0 mr-2 shrink-0 max-w-16")}
+    aria-label="Startseite"
   >
-    Funktionen
+    <BstellIcon className="size-6" />
   </a>
-  <a href="#kosten" class={cn(buttonVariants({ variant: "ghost" }), "px-3")}>
-    Kosten
-  </a>
-  <a
-    href="https://bstell.online/demo"
-    class={cn(buttonVariants({ variant: "ghost" }), "px-3")}
-  >
-    Demo
-  </a>
+  {
+    isDocs ? (
+      <DocsNavDrawer
+        label={currentEntry?.data.title ?? "Menu"}
+        currentSlug={currentEntry?.slug ?? ""}
+        client:load
+      />
+    ) : (
+      <>
+        <a
+          href="/docs/"
+          class={cn(buttonVariants({ variant: "ghost" }), "px-3")}
+        >
+          <span class="min-[416px]:hidden">Docs</span>
+          <span class="hidden min-[416px]:inline">Dokumentation</span>
+        </a>
+        <a
+          href="/#preise"
+          class={cn(buttonVariants({ variant: "ghost" }), "px-3")}
+        >
+          Preise
+        </a>
+        <a
+          href="https://bstell.online/demo"
+          class={cn(buttonVariants({ variant: "ghost" }), "px-3")}
+        >
+          Demo
+        </a>
+      </>
+    )
+  }
 </nav>
-<div class="sm:hidden h-7 bg-card"></div>
+<div class="h-7 bg-card sm:hidden"></div>

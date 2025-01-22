@@ -11,31 +11,31 @@ import { FadeIn } from "../ui/fade-in";
     <div class="home-bg-overlay h-full w-full"></div>
   </div>
   <section
-    class="max-w-4xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-[1fr_24rem] items-center min-h-[60dvh]"
+    class="mx-auto grid min-h-[60dvh] max-w-4xl grid-cols-1 items-center px-6 py-20 md:grid-cols-[1fr_24rem]"
   >
-    <div class="flex flex-col gap-8 max-w-md mx-auto md:max-w-full">
+    <div class="mx-auto flex max-w-md flex-col gap-8 md:max-w-full">
       <FadeIn client:load delay={0.2}>
         <h2
-          class="text-4xl sm:text-5xl font-bold relative text-center md:text-left"
+          class="relative text-center text-4xl font-bold sm:text-5xl md:text-left"
         >
           Das <span
-            class="bg-gradient-to-br from-rose-500 to-pink-600 inline-block text-transparent bg-clip-text"
+            class="inline-block bg-gradient-to-br from-rose-500 to-pink-600 bg-clip-text text-transparent"
             >Kassensystem</span
           ><br />für Vereine
         </h2>
       </FadeIn>
       <FadeIn client:load delay={0.4}>
-        <p class="mt-4 text-center md:text-left text-balance">
-          Mit <BstellIcon className="inline-block size-5 -mr-1" />
+        <p class="mt-4 text-balance text-center md:text-left">
+          Mit <BstellIcon className="-mr-1 inline-block size-5" />
           <span
-            class="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block pr-1.5 pl-1 shadow-md whitespace-nowrap"
+            class="inline-block whitespace-nowrap bg-gradient-to-br from-teal-400 to-teal-500 pl-1 pr-1.5 font-semibold shadow-md"
             >Bstell online</span
           > kann an Veranstaltungen beliebiger Grösse einfach und schnell Bestellungen
           aufgenommen und abgerechnet werden.
         </p>
       </FadeIn>
       <FadeIn client:load delay={0.6}>
-        <div class="flex gap-4 justify-center items-center md:justify-start">
+        <div class="flex items-center justify-center gap-4 md:justify-start">
           <a
             href="https://bstell.online"
             rel="noreferer"
@@ -58,7 +58,7 @@ import { FadeIn } from "../ui/fade-in";
       <img
         src={coffee.src}
         alt="Kaffee"
-        class="w-full h-full max-w-md mx-auto hidden md:block animate-move-x"
+        class="mx-auto hidden h-full w-full max-w-md animate-move-x md:block"
       />
     </FadeIn>
   </section>

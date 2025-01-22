@@ -6,10 +6,10 @@ import { buttonVariants } from "../ui/button";
 ---
 
 <header
-  class="fixed top-0 left-0 right-0 h-16 backdrop-blur z-40 dotted-bg border-b-2 border-background"
+  class="dotted-bg fixed left-0 right-0 top-0 z-40 h-16 border-b-2 border-background backdrop-blur"
 >
   <div
-    class="max-w-4xl flex items-center justify-between mx-auto h-full pl-2 pr-4"
+    class="mx-auto flex h-full max-w-4xl items-center justify-between pl-2 pr-4"
   >
     <a
       href="/"
@@ -19,21 +19,21 @@ import { buttonVariants } from "../ui/button";
       )}
     >
       <BstellIcon className="size-8 shrink-0" />
-      <h1 class="font-medium text-xl">Bstell online</h1>
+      <h1 class="text-xl font-medium">Bstell online</h1>
     </a>
     <div class="flex gap-2">
-      <nav class="space-x-2 hidden sm:flex items-center">
+      <nav class="hidden items-center space-x-2 sm:flex">
         <a
-          href="#funktionen"
+          href="/docs/"
           class={cn(buttonVariants({ variant: "ghost", size: "sm" }))}
         >
-          Funktionen
+          Dokumentation
         </a>
         <a
-          href="#kosten"
+          href="/#preise"
           class={cn(buttonVariants({ variant: "ghost", size: "sm" }))}
         >
-          Kosten
+          Preise
         </a>
         <a
           href="https://bstell.online/demo"

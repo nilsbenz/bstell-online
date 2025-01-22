@@ -1,6 +1,9 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import { defaultGroupIcon, groupIcons } from "@/lib/content";
+import { cn } from "@/lib/utils";
 import { getCollection } from "astro:content";
+import { renderToStaticMarkup } from "react-dom/server";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("docs");
@@ -10,7 +13,9 @@ export async function getStaticPaths() {
   }));
 }
 
-const docsEntries = await getCollection("docs");
+const docsEntries = (await getCollection("docs")).filter(
+  (e) => e.data.published
+);
 const groups = Array.from(
   new Set(docsEntries.map((entry) => entry.data.group))
 );
@@ -19,30 +24,47 @@ const { Content } = await entry.render();
 ---
 
 <Layout title={entry.data.title}>
-  <div class="flex max-w-4xl px-6 gap-6 py-12 mx-auto w-full">
-    <div>
-      <aside class="w-40 sticky top-28">
-        <nav>
-          <ul>
-            {
-              groups.map((group) => (
-                <>
-                  <li class="font-medium">{group}</li>
-                  {docsEntries
-                    .filter((e) => e.data.group === group)
-                    .map((e) => (
-                      <li>
-                        <a href={`/docs/${e.slug}`}>{e.data.title}</a>
-                      </li>
-                    ))}
-                </>
-              ))
-            }
-          </ul>
-        </nav>
-      </aside>
-    </div>
-    <section class="w-full">
+  <div class="mx-auto flex w-full max-w-4xl gap-6 px-6 py-12 max-sm:flex-col">
+    <aside class="sticky top-28 hidden w-52 shrink-0 pt-0 sm:block">
+      <nav class="max-h-[calc(100dvh-7rem)] overflow-y-auto pb-4">
+        <ul>
+          {
+            groups.map((group) => (
+              <>
+                <li class="mb-2 mt-8 flex items-center gap-1.5 font-medium first:mt-0">
+                  <span
+                    set:html={renderToStaticMarkup(
+                      groupIcons[group as keyof typeof groupIcons] ??
+                        defaultGroupIcon
+                    )}
+                  />
+                  {group}
+                </li>
+                {docsEntries
+                  .filter((e) => e.data.group === group)
+                  .map((e) => (
+                    <li
+                      class={cn(
+                        "relative ml-2 mr-1 text-sm text-muted-foreground transition-colors hover:text-foreground",
+                        e.slug === entry.slug &&
+                          "text-foreground before:absolute before:-left-2 before:-top-px before:bottom-0 before:w-[3px] before:rounded before:bg-primary"
+                      )}
+                    >
+                      <a
+                        href={`/docs/${e.slug}`}
+                        class="inline-block w-full rounded-sm px-1 pt-0.5 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                      >
+                        {e.data.title}
+                      </a>
+                    </li>
+                  ))}
+              </>
+            ))
+          }
+        </ul>
+      </nav>
+    </aside>
+    <section class="prose w-full">
       <Content />
     </section>
   </div>

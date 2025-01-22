@@ -5,6 +5,7 @@ const docs = defineCollection({
   schema: z.object({
     title: z.string(),
     group: z.string(),
+    published: z.boolean(),
   }),
 });
 
