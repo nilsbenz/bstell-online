@@ -1,7 +1,7 @@
 ---
 import { EMAIL, EVENT_LICENSE_PRICE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { MailIcon, PrinterIcon } from "lucide-react";
+import { MailIcon, PrinterIcon, RocketIcon } from "lucide-react";
 import { buttonVariants } from "../ui/button";
 import {
   Card,
@@ -60,14 +60,14 @@ import { FadeIn } from "../ui/fade-in";
           </p>
         </div>
         <a
-          href={`mailto:${EMAIL}`}
+          href="/docs/loslegen"
           class={cn(
             buttonVariants({ variant: "outline", size: "lg" }),
             "absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2"
           )}
         >
-          <MailIcon className="size-5" strokeWidth={2.5} />
-          Anfrage
+          <RocketIcon className="size-5" strokeWidth={2.5} />
+          Erste Schritte
         </a>
       </Card>
     </FadeIn>
@@ -126,10 +126,13 @@ import { FadeIn } from "../ui/fade-in";
     </FadeIn>
   </div>
   <div class="col-span-full mt-20">
-    * Preis pro Event.
+    * Preis pro Event mit einer Speisekarte.
     <br />
     <span class="text-muted-foreground">
-      Preis für grössere Veranstaltungen mit mehreren Speisekarten auf Anfrage.
+      Preis für grössere Veranstaltungen mit mehreren Speisekarten <a
+        href={`mailto:${EMAIL}`}
+        class="styled">auf Anfrage</a
+      >.
     </span>
   </div>
 </section>

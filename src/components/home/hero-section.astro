@@ -1,7 +1,7 @@
 ---
 import coffee from "@/assets/images/coffee.svg";
-import { BstellIcon, EMAIL } from "@/lib/constants";
-import { MailIcon, TabletSmartphoneIcon } from "lucide-react";
+import { BstellIcon } from "@/lib/constants";
+import { RocketIcon, TabletSmartphoneIcon } from "lucide-react";
 import { buttonVariants } from "../ui/button";
 import { FadeIn } from "../ui/fade-in";
 ---
@@ -37,19 +37,19 @@ import { FadeIn } from "../ui/fade-in";
       <FadeIn client:load delay={0.6}>
         <div class="flex items-center justify-center gap-4 md:justify-start">
           <a
+            href="/docs/loslegen"
+            class={buttonVariants({ variant: "outline", size: "lg" })}
+          >
+            <RocketIcon className="size-5" strokeWidth={2.5} />
+            Erste Schritte
+          </a>
+          <a
             href="https://bstell.online"
             rel="noreferer"
-            class={buttonVariants({ variant: "outline", size: "lg" })}
+            class={buttonVariants({ variant: "ghost" })}
           >
             <TabletSmartphoneIcon className="size-5" strokeWidth={2.5} />
             Zur App
-          </a>
-          <a
-            href={`mailto:${EMAIL}`}
-            class={buttonVariants({ variant: "ghost" })}
-          >
-            <MailIcon className="size-5" strokeWidth={2.5} />
-            Kontakt
           </a>
         </div>
       </FadeIn>

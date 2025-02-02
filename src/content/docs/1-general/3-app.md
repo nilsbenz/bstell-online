@@ -2,7 +2,7 @@
 title: App
 group: Allgemeines
 published: false
-slug: allgemein/app
+slug: app
 ---
 
 # Über die App

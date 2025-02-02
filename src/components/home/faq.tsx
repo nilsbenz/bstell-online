@@ -9,6 +9,22 @@ import { FadeIn } from "../ui/fade-in";
 
 const faqItems = [
   {
+    question: "Kann ich das Kassensystem testen?",
+    answer: (
+      <>
+        Ja, alle Komponenten des Kassensystems können gratis getestet werden.
+        Nur um Bestellungen zu Drucken, brauchst du eine Lizenz, alle anderen
+        Funktionen sind auch davor verfügbar.
+        <br />
+        Wie du loslegen kannst, erfährst du in der{" "}
+        <a href="/docs/loslegen" className="styled">
+          Dokumentation
+        </a>
+        .
+      </>
+    ),
+  },
+  {
     question: "Welche Zahlungsarten werden unterstützt?",
     answer:
       "Bstell online arbeitet mit dem Zahlungsanbieter Stripe zusammen. Es können alle Zahlungsarten verwendet werden, die Stripe unterstützt. Das sind grundsätzlich alle gängigen Zahlungsmittel, unter anderem Kreditkarte, Twint, Apple Pay und Google Pay.",

@@ -2,7 +2,7 @@
 title: Preise
 group: Allgemeines
 published: false
-slug: allgemein/preise
+slug: preise
 ---
 
 # Kosten

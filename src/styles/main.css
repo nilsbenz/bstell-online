@@ -117,10 +117,34 @@
     @apply text-2xl font-semibold leading-none tracking-tight;
   }
 
+  a {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    text-decoration-color: transparent;
+    @apply rounded ring-offset-background transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+
+  a:not(.unstyled):hover {
+    text-decoration-color: hsl(var(--primary));
+    @apply text-primary;
+  }
+
+  a.styled {
+    @apply font-medium;
+  }
+
   .prose blockquote p {
     &::before,
     &::after {
       content: "";
     }
+  }
+
+  .prose a.button {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-medium transition-colors;
+    @apply bg-primary text-primary-foreground;
+    @apply h-10 px-4;
+    @apply no-underline;
   }
 }
