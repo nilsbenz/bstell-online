@@ -8,7 +8,7 @@ import DocsNavDrawer from "./docs-nav-drawer";
 const isDocs = Astro.url.pathname.startsWith("/docs");
 const docsEntries = await getCollection("docs");
 const currentEntry = docsEntries.find(
-  (entry) => entry.slug === Astro.url.pathname.substring(6)
+  (entry) => entry.slug === Astro.url.pathname.substring(6).replace(/\/$/, "")
 );
 ---
 

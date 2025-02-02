@@ -1,7 +1,8 @@
+import { defaultGroupIcon, groupIcons } from "@/lib/content";
 import { cn } from "@/lib/utils";
 import { getCollection } from "astro:content";
 import { navigate } from "astro:transitions/client";
-import { AlignRightIcon, BookMarkedIcon, InfoIcon } from "lucide-react";
+import { AlignRightIcon } from "lucide-react";
 import React, { useState } from "react";
 import { Button } from "../ui/button";
 import {
@@ -14,7 +15,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "../ui/drawer";
-import { defaultGroupIcon, groupIcons } from "@/lib/content";
 
 const docsEntries = (await getCollection("docs")).filter(
   (e) => e.data.published,
@@ -86,7 +86,7 @@ export default function DocsNavDrawer({
                       >
                         <a
                           href={`/docs/${e.slug}`}
-                          className="inline-block w-full rounded-sm px-1 pt-0.5 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                          className="unstyled inline-block w-full rounded-sm px-1 pt-0.5 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                           onClick={handleLinkClicked}
                         >
                           {e.data.title}
