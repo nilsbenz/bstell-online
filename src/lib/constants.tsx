@@ -2,7 +2,7 @@ import { cn } from "./utils";
 
 export const EMAIL = "info@bstell.online";
 
-export const EVENT_LICENSE_PRICE = 150;
+export const EVENT_LICENSE_PRICE = 100;
 export const TRANSACTION_FEE = 1;
 
 export function BstellIcon({ className }: { className?: string }) {
