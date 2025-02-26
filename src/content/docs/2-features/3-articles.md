@@ -17,7 +17,7 @@ Folgende Funktionen sind verfügbar:
 
 Die folgende Grafik zeigt eine mögliche Gruppierung von einigen Artikeln.
 
-![Überblick über die Artikel, Kategorien und Outputs](@/assets/docs/articles.svg)
+![Überblick über die Artikel, Kategorien und Outputs](/diagrams/articles.svg)
 
 ## Outputs
 

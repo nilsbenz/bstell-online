@@ -15,7 +15,7 @@ Nachfolgend findest du eine Grafik, welche die Struktur des Kassensystems
 aufzeigt. Die Pfeile zeigen den Weg einer Bestellung vom Servicepersonal oder
 dem Kunden bis zum Drucker.
 
-![Überblick über die Struktur von Bstell online](@/assets/docs/overview.svg)
+![Überblick über die Struktur von Bstell online](/diagrams/overview.svg)
 
 ## Das lokale Netzwerk
 
