@@ -13,8 +13,8 @@ const faqItems = [
     answer: (
       <>
         Ja, alle Komponenten des Kassensystems können gratis getestet werden.
-        Nur um Bestellungen zu Drucken, brauchst du eine Lizenz, alle anderen
-        Funktionen sind auch davor verfügbar.
+        Nur für Kundenbestellungen und um Bestellungen zu Drucken brauchst du
+        eine Lizenz, alle anderen Funktionen sind auch ohne verfügbar.
         <br />
         Wie du loslegen kannst, erfährst du in der{" "}
         <a href="/docs/loslegen" className="styled">
@@ -32,7 +32,7 @@ const faqItems = [
   {
     question: "Welche Hardware brauche ich, um die Software einzusetzen?",
     answer:
-      "Du brauchst einen an das Internet angeschlossenen Laptop, um die Bestellungen zu drucken. Zusätzlich brauchst du mindestens einen netzwerkfähigen Epson POS-Drucker. Das Servicepersonal benötigt ein Smartphone (am besten das eigene), um die Bestellungen aufzunehmen.",
+      "Du brauchst ein lokales Netzwerk, das mit dem Internet verbunden ist. In diesem Netzwerk brauchst du einen Laptop und mindestens einen netzwerkfähigen Epson POS-Drucker. Das Servicepersonal benötigt ein Smartphone (am besten das eigene), um die Bestellungen aufzunehmen.",
   },
   {
     question:

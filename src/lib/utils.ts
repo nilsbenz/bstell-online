@@ -26,8 +26,8 @@ export const seoConfig = {
 } as const;
 
 export const manifest: Partial<ManifestOptions> = {
-  name: "Bstell online",
-  short_name: "Bstell online",
+  name: "Bstell Docs",
+  short_name: "Bstell Docs",
   description,
   theme_color: "#0369a0",
   background_color: "#ffffff",

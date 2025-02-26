@@ -56,7 +56,7 @@ import { FadeIn } from "../ui/fade-in";
             {EVENT_LICENSE_PRICE} Fr.*
           </p>
           <p class="text-center text-sm font-medium">
-            + 1% vom Umsatz aus Online-Bestellungen
+            + 1% vom Umsatz aus Online-Bestellungen**
           </p>
         </div>
         <a
@@ -125,14 +125,33 @@ import { FadeIn } from "../ui/fade-in";
       </a>
     </FadeIn>
   </div>
-  <div class="col-span-full mt-20">
-    * Preis pro Event mit einer Speisekarte.
-    <br />
-    <span class="text-muted-foreground">
-      Preis für grössere Veranstaltungen mit mehreren Speisekarten <a
-        href={`mailto:${EMAIL}`}
-        class="styled">auf Anfrage</a
-      >.
-    </span>
+  <div class="col-span-full mt-20 space-y-4">
+    <div>
+      <p>
+        * Preis pro Event mit einer Speisekarte. Die Lizenz ist 7 Tage gültig.
+      </p>
+      <p class="text-muted-foreground">
+        Preis für grössere Veranstaltungen mit mehreren Speisekarten <a
+          href={`mailto:${EMAIL}`}
+          class="styled">auf Anfrage</a
+        >.
+      </p>
+    </div>
+    <div>
+      <p>
+        ** Die Gebühren gelten nur für Online-Bestellungen von Kunden und werden
+        zusätzlich zu den Gebühren des Zahlungsanbieters (Stripe) abgerechnet.
+        Bestellungen vom Servicepersonal sind kostenlos.
+      </p>
+      <p class="text-muted-foreground">
+        Wird eine Online-Bestellung also mit Twint bezahlt, fallen etwa 30 Rp. +
+        2.9% Gebühren an (ohne Gewähr, <a
+          href="https://stripe.com/de-ch/pricing/local-payment-methods"
+          target="_blank"
+          rel="noreferer"
+          class="styled">siehe Stripe</a
+        >).
+      </p>
+    </div>
   </div>
 </section>
