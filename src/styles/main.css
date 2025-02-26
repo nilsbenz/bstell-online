@@ -134,10 +134,19 @@
     @apply font-medium;
   }
 
-  .prose blockquote p {
-    &::before,
-    &::after {
-      content: "";
+  .prose blockquote {
+    font-style: normal;
+    font-weight: normal;
+    padding: 1rem;
+    @apply border-primary bg-primary/15 shadow-lg;
+
+    & p {
+      margin: 0;
+
+      &::before,
+      &::after {
+        content: "";
+      }
     }
   }
 
@@ -146,5 +155,9 @@
     @apply bg-primary text-primary-foreground;
     @apply h-10 px-4;
     @apply no-underline;
+  }
+
+  .prose img:not([alt="diagram"]) {
+    @apply shadow-xl;
   }
 }
