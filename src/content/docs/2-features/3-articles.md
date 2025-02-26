@@ -62,7 +62,7 @@ Varianten:
 - **Text**: eine einfache Texteingabe. Beachte hier, dass das Servicepersonal
   immer einen Kommentar für einen Artikel anfügen kann, und diese Option bei
   Online-Bestellungen für alle Artikel (de)aktiviert werden kann.
-  [Siehe Online-Bestellungen](/docs/funktionen/online-bestellungen).
+  [Siehe Online-Bestellungen](/docs/funktionen/online-bestellungen/#kommentare).
 - **Zahl**: Bei der Bestellung kann/muss eine Zahl angegeben werden,
   beispielsweise für die benötigte Anzahl Gläser
 - **Schalter**: Kann verwendet werden, um eine Option zu aktivieren.
