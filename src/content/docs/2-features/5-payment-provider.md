@@ -31,7 +31,7 @@ weitere Zahlungsmöglichkeiten wie z.B. Twint erlauben.
 
 Achte dabei darauf, dass du die Konfiguration für Bstell online ausgewählt hast:
 
-![Zahlungsmethode für die Konfiguration «Bstell online» bearbeiten](@/assets/docs/update-stripe-paymentmethods.png)
+![Zahlungsmethode für die Konfiguration «Bstell online» bearbeiten](/docs-assets/update-stripe-paymentmethods.png)
 
 <a href="https://dashboard.stripe.com/settings/payment_methods" class="button">Zahlungsmethoden
 bearbeiten</a>

@@ -15,7 +15,7 @@ Nachfolgend findest du eine Grafik, welche die Struktur des Kassensystems
 aufzeigt. Die Pfeile zeigen den Weg einer Bestellung vom Servicepersonal oder
 dem Kunden bis zum Drucker.
 
-![diagram](/diagrams/overview.svg)
+![diagram](/docs-assets/overview.svg)
 
 ## Das lokale Netzwerk
 
