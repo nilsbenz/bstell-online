@@ -17,7 +17,7 @@ Folgende Funktionen sind verfügbar:
 
 Die folgende Grafik zeigt eine mögliche Gruppierung von einigen Artikeln.
 
-![diagram](/docs-assets/articles.svg)
+<img src="/docs-assets/articles.svg" alt="Aufbau der Artikel" class="shadow-none" />
 
 ## Outputs
 

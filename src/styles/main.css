@@ -157,7 +157,7 @@
     @apply no-underline;
   }
 
-  .prose img:not([alt="diagram"]) {
+  .prose img:not(.shadow-none) {
     @apply shadow-xl;
   }
 }
