@@ -55,8 +55,8 @@ gespeichert werden. Der Drucker startet anschliessend neu.
 > unbedingt unverändert lassen.
 
 Es kann von Vorteil sein, wenn der Drucker immer dieselbe IP-Adresse zugewiesen
-bekommt. Dies kannst du in der Konfiguration und am besten im Router so
-definieren.
+bekommt. Dies solltest du in der Konfiguration deines Routers machen und nicht
+beim Drucker direkt, da es sonst zu Adresskonflikten kommen kann.
 
 ## Drucker verbinden
 
