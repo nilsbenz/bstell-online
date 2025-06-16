@@ -31,8 +31,20 @@ const faqItems = [
   },
   {
     question: "Welche Hardware brauche ich, um die Software einzusetzen?",
-    answer:
-      "Du brauchst ein lokales Netzwerk, das mit dem Internet verbunden ist. In diesem Netzwerk brauchst du einen Laptop und mindestens einen netzwerkfähigen Epson POS-Drucker. Das Servicepersonal benötigt ein Smartphone (am besten das eigene), um die Bestellungen aufzunehmen.",
+    answer: (
+      <>
+        Du brauchst ein lokales Netzwerk, das mit dem Internet verbunden ist. In
+        diesem Netzwerk brauchst du einen Laptop und mindestens einen
+        netzwerkfähigen Epson POS-Drucker. Das Servicepersonal benötigt ein
+        Smartphone (am besten das eigene), um die Bestellungen aufzunehmen.
+        <br />
+        Genauere Informationen dazu findest du in der{" "}
+        <a href="/docs/hardware" className="styled">
+          Dokumentation
+        </a>
+        .
+      </>
+    ),
   },
   {
     question:

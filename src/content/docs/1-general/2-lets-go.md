@@ -69,3 +69,6 @@ Testdruck zu machen:
 1. Auf der Seite «Drucker & Displays» im Kassensystem, füge den eben
    konfigurierten Drucker hinzu und verbinde ihn. Beachte, dass wenn du die
    Seite neu lädst, die Verbindung zum Drucker unterbrochen wird.
+
+Eine detailliertere Anleitung findest du in
+[diesem Artikel](/docs/hardware/drucker).

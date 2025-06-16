@@ -1,8 +1,8 @@
 ---
 title: Drucker
-group: Funktionen
+group: Hardware
 published: true
-slug: funktionen/drucker
+slug: hardware/drucker
 ---
 
 # Drucker einrichten

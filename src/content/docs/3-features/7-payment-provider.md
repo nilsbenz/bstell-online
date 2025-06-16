@@ -24,6 +24,13 @@ siehst du eine Schaltfläche **«Loslegen»**, welche dich zu Stripe weiterleite
 Erstelle einen Account bei Stripe oder melde dich alternativ mit einem bereits
 vorhandenen Account an.
 
+> **Tipp:** Registriere dich früh genug bei Stripe, dies kann einige Tage
+> dauern. Schau ab und zu im Dashboard von Stripe vorbei, um allfällige
+> Fehlermeldungen nicht zu übersehen. Stripe kann, wenn z.B. die
+> Unternehmungs&shy;registrierung nicht erfolgreich war, Zahlungen ab einem
+> späteren Zeitpunkt deaktivieren. Dann können Kunden nicht mehr online bezahlen
+> und daher auch nicht bestellen.
+
 ## Zahlungsmethoden definieren
 
 Standardmässig sind nur Kartenzahlungen aktiviert. Du kannst im Stripe Dashboard
