@@ -9,7 +9,8 @@ slug: website
 
 Ihr organisiert ein Fest und hättet gerne eine professionelle Website? Am besten
 eine Website, in die «Bstell online» direkt eingebettet ist? Dann bist du hier
-genau richtig.
+genau richtig. Jede Website ist als **Progressive Web App (PWA)** direkt auf dem
+Smartphone installierbar, so bekommst du deine Fest-App automatisch dazu.
 
 Für die [Rheintaler Kreismusiktage 2025](https://kmt25.ch) haben wir genau das
 gemacht:
@@ -23,6 +24,6 @@ klären. Wir machen unter anderem:
 
 - Logo-Design
 - Webdesign & Konzeption
-- Entwicklung der Website
+- Entwicklung der Website & App
 - SEO
 - Integration des Kassensystems in die Website
