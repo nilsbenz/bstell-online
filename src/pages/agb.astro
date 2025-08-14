@@ -1,7 +1,7 @@
 ---
 import { Button } from "@/components/ui/button";
 import Layout from "@/layouts/Layout.astro";
-import { EMAIL, TRANSACTION_FEE } from "@/lib/constants";
+import { EMAIL } from "@/lib/constants";
 import { DownloadIcon } from "lucide-react";
 ---
 
@@ -363,11 +363,14 @@ import { DownloadIcon } from "lucide-react";
         </li>
         <li>
           Wir verrechnen Ihnen zusätzlich zum Kaufpreis der Lizenz eine Gebühr
-          von {TRANSACTION_FEE}% des Bestellwerts bei Onlinebestellungen für die
-          Nutzung unserer Dienstleistungen. Diese erfolgt pro erfolgreiche
-          Zahlung und wird automatisch, zusätzlich zu den Gebühren vom
-          Zahlungsanbieter, abgezogen. Das Geschäft hat die Möglichkeit, einen
-          gewissen Anteil der Gebühren auf den Kunden zu übertragen.
+          von 1% {/* TODO: adjust this if it changes */} des Bestellwerts (ohne Gewähr,
+          siehe <a href="/#preise" class="underline decoration-current"
+            >Preise</a
+          >) bei Onlinebestellungen für die Nutzung unserer Dienstleistungen.
+          Diese erfolgt pro erfolgreiche Zahlung und wird automatisch,
+          zusätzlich zu den Gebühren vom Zahlungsanbieter, abgezogen. Das
+          Geschäft hat die Möglichkeit, einen gewissen Anteil der Gebühren auf
+          den Kunden zu übertragen.
         </li>
       </ul>
     </section>
