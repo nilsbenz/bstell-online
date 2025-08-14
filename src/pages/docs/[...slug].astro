@@ -49,12 +49,12 @@ const { Content } = await entry.render();
                       class={cn(
                         "relative ml-2 mr-1 text-sm text-muted-foreground transition-colors hover:text-foreground",
                         e.slug === entry.slug &&
-                          "text-foreground before:absolute before:-left-2 before:bottom-0 before:top-[3px] before:w-[3px] before:rounded before:bg-primary"
+                          "text-foreground before:absolute before:-left-2 before:bottom-[2px] before:top-0 before:w-[3px] before:rounded before:bg-primary"
                       )}
                     >
                       <a
                         href={`/docs/${e.slug}`}
-                        class="unstyled inline-block w-full rounded-sm px-1 pt-1 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        class="unstyled inline-block w-full rounded-sm px-1 py-0.5 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                       >
                         {e.data.title}
                       </a>
