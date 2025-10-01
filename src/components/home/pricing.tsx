@@ -124,13 +124,11 @@ export default function Pricing() {
               <span className="text-base font-medium">ab</span> 400 Fr.*
             </p>
             <p className="text-center text-sm font-medium">
-              genauere Infos{" "}
-              <a
-                href="/downloads/pricing_au.pdf"
-                className="decoration-foreground"
-                aria-label="Preisliste Musikverein Konkordia Au (PDF)"
-              >
-                hier
+              <a href="/downloads/pricing_au.pdf" className="unstyled group">
+                genauere Infos{" "}
+                <span className="underline decoration-current decoration-2 transition-colors group-hover:text-primary">
+                  hier
+                </span>
               </a>
             </p>
           </div>
