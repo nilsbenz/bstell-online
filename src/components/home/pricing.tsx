@@ -41,22 +41,26 @@ export default function Pricing() {
               </CardDescription>
             </CardHeader>
             <CardContent className="grow">
-              <ul className="list-disc space-y-2 pl-6 [&>li]:font-medium">
-                <li>Alle Features der Software, z.B.:</li>
-                <ul className="list-disc pl-6">
-                  <li>Bestellungen vom Personal</li>
-                  <li>Online-Bestellungen per QR-Code</li>
-                  <li>Auswertung nach dem Event</li>
-                </ul>
-                <li>Du brauchst noch:</li>
-                <ul className="list-disc pl-6">
-                  <li>
-                    mind. einen netzwerk&shy;fähigen Epson POS-Drucker (z.B.
-                    Epson TM-T20iii)
-                  </li>
-                  <li>stabiles Internet am Event</li>
-                  <li>einen Laptop</li>
-                </ul>
+              <ul className="list-disc space-y-2 pl-6 font-medium">
+                <li>
+                  Alle Features der Software, z.B.:
+                  <ul className="list-disc py-1 pl-6 font-normal">
+                    <li>Bestellungen vom Personal</li>
+                    <li>Online-Bestellungen per QR-Code</li>
+                    <li>Auswertung nach dem Event</li>
+                  </ul>
+                </li>
+                <li>
+                  Du brauchst noch:
+                  <ul className="list-disc py-1 pl-6 font-normal">
+                    <li>
+                      mind. einen netzwerk&shy;fähigen Epson POS-Drucker (z.B.
+                      Epson TM-T20iii)
+                    </li>
+                    <li>stabiles Internet am Event</li>
+                    <li>einen Laptop</li>
+                  </ul>
+                </li>
               </ul>
             </CardContent>
             <div className="space-y-1 pb-16 pt-8">
@@ -95,20 +99,24 @@ export default function Pricing() {
             </CardDescription>
           </CardHeader>
           <CardContent className="grow">
-            <ul className="list-disc space-y-2 pl-6 [&>li]:font-medium">
+            <ul className="list-disc space-y-2 pl-6 font-medium">
               <li>Alle Features der Software</li>
-              <li>Support bei Bedarf:</li>
-              <ul className="list-disc pl-6">
-                <li>Einpflegen der Speisekarte</li>
-                <li>Unterstützung beim Einrichten der Online-Bestellungen</li>
-              </ul>
-              <li>Je nach Verfügbarkeit am Event:</li>
-              <ul className="list-disc pl-6">
-                <li>3 Drucker</li>
-                <li>Router inkl. Internet</li>
-                <li>Admin-Laptop</li>
-                <li>Betreuung des Systems vor Ort</li>
-              </ul>
+              <li>
+                Support bei Bedarf:
+                <ul className="list-disc py-1 pl-6 font-normal">
+                  <li>Einpflegen der Speisekarte</li>
+                  <li>Unterstützung beim Einrichten der Online-Bestellungen</li>
+                </ul>
+              </li>
+              <li>
+                Je nach Verfügbarkeit am Event:
+                <ul className="list-disc py-1 pl-6 font-normal">
+                  <li>3 Drucker</li>
+                  <li>Router inkl. Internet</li>
+                  <li>Admin-Laptop</li>
+                  <li>Betreuung des Systems vor Ort</li>
+                </ul>
+              </li>
             </ul>
           </CardContent>
           <div className="space-y-1 pb-16 pt-8">
@@ -120,6 +128,7 @@ export default function Pricing() {
               <a
                 href="/downloads/pricing_au.pdf"
                 className="decoration-foreground"
+                aria-label="Preisliste Musikverein Konkordia Au (PDF)"
               >
                 hier
               </a>
