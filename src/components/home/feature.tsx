@@ -28,26 +28,30 @@ export default function Feature({
   return (
     <div
       className={cn(
-        "flex flex-col sm:flex-row items-center",
+        "flex flex-col items-center sm:flex-row",
         index % 2 === 0
-          ? "border-2 shadow-xl rounded-lg bg-card text-card-foreground"
-          : "sm:flex-row-reverse"
+          ? "rounded-lg border-2 bg-card text-card-foreground shadow-xl"
+          : "sm:flex-row-reverse",
       )}
       ref={ref}
     >
-      <div className="flex justify-center shrink-0">
+      <div className="flex shrink-0 justify-center">
         <FadeIn from={index % 2 === 0 ? "left" : "right"} delay={0.3}>
-          <img src={image} alt={title} className="size-60 sm:size-80" />
+          <img
+            src={image}
+            alt={`«Bstell online» Dokumentation – ${title}`}
+            className="size-60 sm:size-80"
+          />
         </FadeIn>
       </div>
       <motion.div
         className={cn(
-          "space-y-4 sm:space-y-6 text-center sm:text-left px-4 pt-2 pb-10 sm:p-4",
-          index % 2 === 1 && "sm:text-right"
+          "space-y-4 px-4 pb-10 pt-2 text-center sm:space-y-6 sm:p-4 sm:text-left",
+          index % 2 === 1 && "sm:text-right",
         )}
         style={{ y }}
       >
-        <h3 className="text-3xl sm:text-4xl font-semibold">{title}</h3>
+        <h3 className="text-3xl font-semibold sm:text-4xl">{title}</h3>
         <p className="text-balance">{description}</p>
       </motion.div>
     </div>

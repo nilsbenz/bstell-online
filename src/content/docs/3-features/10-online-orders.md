@@ -58,3 +58,12 @@ Es gibt zwei verschiedene Varianten der QR-Codes:
 Falls erwünscht kannst du Kunden erlauben, Kommentare zu bestellten Artikeln zu
 verfassen. Beachte, dass das Servicepersonal unabhängig von dieser Einstellung
 immer Kommentare erfassen kann.
+
+## Trinkgeld
+
+Du kannst selber entscheiden, ob ihr Trinkgeld annehmen wollt oder nicht. Der
+Kunde hat die Möglichkeit, 1.– oder 10% Trinkgeld zu geben oder selber einen
+Betrag einzugeben.
+
+Der Begriff «Trinkgeld» kann durch einen beliebigen Text ersetzt werden, falls
+ihr zum Beispiel für einen speziellen Zweck sammelt.

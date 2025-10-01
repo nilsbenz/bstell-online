@@ -75,7 +75,11 @@ export default function FAQ() {
           ))}
         </Accordion>
         <FadeIn delay={0.3} className="hidden shrink-0 md:block">
-          <img src={fries.src} alt="" className="size-80 animate-move-y" />
+          <img
+            src={fries.src}
+            alt="Oft gestellte Fragen zu «Bstell online», dem Kassensystem für Vereine"
+            className="size-80 animate-move-y"
+          />
         </FadeIn>
       </div>
     </section>

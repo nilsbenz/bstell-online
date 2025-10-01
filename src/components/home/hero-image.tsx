@@ -17,15 +17,15 @@ export default function HeroImage() {
   const maxWidth = useTransform(
     scrollYProgressSpring,
     [0, 1],
-    ["52rem", "56rem"]
+    ["52rem", "56rem"],
   );
 
   return (
     <div ref={ref} className="relative overflow-clip">
-      <div className="max-w-3xl mx-auto w-full px-4 md:px-0">
+      <div className="mx-auto w-full max-w-3xl px-4 md:px-0">
         <motion.img
           src={articles.src}
-          alt="Artikel erfassen"
+          alt="«Bstell online» ist ein preiswertes und einfach zu bedienendes Bestellsystem für Vereine."
           className="w-full"
           style={{
             aspectRatio: `${articles.width} / ${articles.height}`,
@@ -34,7 +34,7 @@ export default function HeroImage() {
         />
       </div>
       <motion.div
-        className="absolute bottom-0 left-0 right-0 h-8 bg-black rounded-[50%] blur-lg mx-auto translate-y-1/2"
+        className="absolute bottom-0 left-0 right-0 mx-auto h-8 translate-y-1/2 rounded-[50%] bg-black blur-lg"
         style={{ opacity, maxWidth }}
       />
     </div>
