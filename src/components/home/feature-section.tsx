@@ -11,9 +11,9 @@ const features = [
     description: (
       <>
         Bstell online kann genau das, was ein{" "}
-        <b>Kassensystem für Vereinsanlässe</b> können muss, nicht mehr und nicht
-        weniger. Durch die{" "}
-        <span className="bg-gradient-to-br from-rose-500 to-pink-600 text-transparent bg-clip-text font-semibold">
+        <b>Bestellsystem für Vereinsanlässe</b> können muss, nicht mehr und
+        nicht weniger. Durch die{" "}
+        <span className="bg-gradient-to-br from-rose-500 to-pink-600 bg-clip-text font-semibold text-transparent">
           einfache Benutzeroberfläche
         </span>{" "}
         soll jedes Vereinsmitglied im Service arbeiten können, mit minimaler
@@ -27,7 +27,7 @@ const features = [
     description: (
       <>
         Um Bstell online einzusetzen braucht es{" "}
-        <span className="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block px-1.5 shadow-md whitespace-nowrap">
+        <span className="inline-block whitespace-nowrap bg-gradient-to-br from-teal-400 to-teal-500 px-1.5 font-semibold shadow-md">
           <TabletSmartphoneIcon
             className="inline-block size-5"
             strokeWidth={2.5}
@@ -47,7 +47,7 @@ const features = [
       <>
         Um das Servicepersonal zu entlasten, können Kunden direkt über die
         Internetseite Bestellungen aufgeben und gleich{" "}
-        <span className="bg-gradient-to-br from-teal-400 to-teal-500 font-semibold inline-block px-1.5 shadow-md whitespace-nowrap">
+        <span className="inline-block whitespace-nowrap bg-gradient-to-br from-teal-400 to-teal-500 px-1.5 font-semibold shadow-md">
           <WalletCardsIcon className="inline-block size-5" strokeWidth={2.5} />{" "}
           online bezahlen
         </span>
@@ -62,7 +62,7 @@ const features = [
       <>
         Da das Servicepersonal die Bestellungen mit dem eigenen Handy aufnimmt,
         kann Bstell online an{" "}
-        <span className="bg-gradient-to-br from-rose-500 to-pink-600 text-transparent bg-clip-text font-semibold">
+        <span className="bg-gradient-to-br from-rose-500 to-pink-600 bg-clip-text font-semibold text-transparent">
           Events beliebiger Grösse
         </span>{" "}
         eingesetzt werden.
@@ -75,7 +75,7 @@ const features = [
 export default function FeatureSection() {
   return (
     <section
-      className="max-w-4xl mx-auto px-6 space-y-20 scroll-mt-24"
+      className="mx-auto max-w-4xl scroll-mt-24 space-y-20 px-6"
       id="funktionen"
     >
       {features.map((feature, index) => (
