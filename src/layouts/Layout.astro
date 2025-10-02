@@ -39,7 +39,7 @@ const { title, description, printOnlyMain } = Astro.props;
         },
         optional: {
           siteName: seoConfig.siteName,
-          description: seoConfig.description,
+          description: description || seoConfig.description,
         },
       }}
       twitter={{
