@@ -1,5 +1,8 @@
 ---
 title: Website
+description:
+  "Professionelle Event-Website mit integrierter Bestellfunktion: «Bstell
+  online» als PWA, inkl. Webdesign, Logo, SEO und Kassensystem-Integration."
 group: Allgemeines
 published: true
 slug: website

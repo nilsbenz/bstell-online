@@ -1,5 +1,8 @@
 ---
 title: Zeiten
+description:
+  Weise Artikeln feste Zeiten zu, um Bestellungen später zu drucken. Ideal für
+  Pausen oder gestaffelte Auslieferung – automatisch und effizient.
 group: Funktionen
 published: true
 slug: funktionen/zeiten

@@ -1,5 +1,8 @@
 ---
 title: Erste Schritte
+description:
+  "Starte kostenlos mit «Bstell online»: Verein anlegen, Event erstellen,
+  Artikel erfassen, Tische aktivieren und Drucker testen – ganz ohne Lizenz."
 group: Allgemeines
 published: true
 slug: loslegen

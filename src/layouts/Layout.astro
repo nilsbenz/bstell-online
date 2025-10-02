@@ -8,11 +8,12 @@ import "@/styles/main.css";
 import "@fontsource-variable/rubik";
 
 interface Props {
-  title: string;
+  title?: string;
+  description?: string;
   printOnlyMain?: boolean;
 }
 
-const { title, printOnlyMain } = Astro.props;
+const { title, description, printOnlyMain } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,12 +21,14 @@ const { title, printOnlyMain } = Astro.props;
   <head>
     <SEO
       title={title}
-      description={seoConfig.description}
+      titleTemplate={`${seoConfig.siteName} | %s`}
+      titleDefault={seoConfig.siteName}
+      description={description || seoConfig.description}
       noindex={false}
       nofollow={false}
       openGraph={{
         basic: {
-          title: title,
+          title: title || seoConfig.siteName,
           type: "website",
           image: seoConfig.image.url,
         },
@@ -57,7 +60,6 @@ const { title, printOnlyMain } = Astro.props;
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
-    <title>{title}</title>
 
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="mobile-web-app-capable" content="yes" />

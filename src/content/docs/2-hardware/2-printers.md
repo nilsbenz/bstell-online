@@ -1,5 +1,8 @@
 ---
 title: Drucker
+description:
+  "So richtest du deinen Epson-Drucker für «Bstell online» ein: IP-Adresse
+  finden, ePOS aktivieren, Drucker verbinden und Outputs korrekt zuweisen."
 group: Hardware
 published: true
 slug: hardware/drucker

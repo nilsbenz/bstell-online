@@ -1,5 +1,9 @@
 ---
 title: Auswertung
+description:
+  Erstelle nach dem Event eine Auswertung mit Umsatz, Bestellungen und
+  Artikelstatistik. Filterbar, exportierbar als CSV und ideal für die
+  Nachbereitung.
 group: Funktionen
 published: true
 slug: funktionen/auswertung

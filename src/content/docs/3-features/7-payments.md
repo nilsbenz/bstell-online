@@ -1,5 +1,8 @@
 ---
 title: Zahlungen
+description:
+  Unterstütze dein Personal beim Kassieren mit Bargeldrechner, Twint-QR,
+  Zahlungsgruppen und Optionen für bargeldlose Bezahlung – einfach und flexibel.
 group: Funktionen
 published: true
 slug: funktionen/zahlungen

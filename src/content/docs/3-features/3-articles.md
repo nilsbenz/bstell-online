@@ -1,5 +1,8 @@
 ---
 title: Artikel
+description:
+  Erfahre, wie du Artikel, Kategorien und Outputs in «Bstell online»
+  organisierst – für effizientes Drucken und klare Struktur deiner Speisekarte.
 group: Funktionen
 published: true
 slug: funktionen/artikel

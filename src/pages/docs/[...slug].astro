@@ -7,7 +7,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 
 export async function getStaticPaths() {
   const blogEntries = (await getCollection("docs")).filter(
-    (e) => e.data.published
+    (e) => e.data.published,
   );
   return blogEntries.map((entry) => ({
     params: { slug: entry.slug },
@@ -16,16 +16,16 @@ export async function getStaticPaths() {
 }
 
 const docsEntries = (await getCollection("docs")).filter(
-  (e) => e.data.published
+  (e) => e.data.published,
 );
 const groups = Array.from(
-  new Set(docsEntries.map((entry) => entry.data.group))
+  new Set(docsEntries.map((entry) => entry.data.group)),
 );
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title}>
+<Layout title={entry.data.title} description={entry.data.description}>
   <div class="mx-auto flex w-full max-w-4xl gap-6 px-6 py-12 max-sm:flex-col">
     <aside class="hidden w-52 shrink-0 sm:block">
       <nav class="sticky top-28 max-h-[calc(100dvh-7rem)] overflow-y-auto pb-4">
@@ -37,7 +37,7 @@ const { Content } = await entry.render();
                   <span
                     set:html={renderToStaticMarkup(
                       groupIcons[group as keyof typeof groupIcons] ??
-                        defaultGroupIcon
+                        defaultGroupIcon,
                     )}
                   />
                   {group}
@@ -49,7 +49,7 @@ const { Content } = await entry.render();
                       class={cn(
                         "relative ml-2 mr-1 text-sm text-muted-foreground transition-colors hover:text-foreground",
                         e.slug === entry.slug &&
-                          "text-foreground before:absolute before:-left-2 before:bottom-[2px] before:top-0 before:w-[3px] before:rounded before:bg-primary"
+                          "text-foreground before:absolute before:-left-2 before:bottom-[2px] before:top-0 before:w-[3px] before:rounded before:bg-primary",
                       )}
                     >
                       <a

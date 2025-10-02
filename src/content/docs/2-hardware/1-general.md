@@ -1,5 +1,8 @@
 ---
 title: Was du brauchst
+description:
+  Für «Bstell online» brauchst du nur einen Laptop, einen Epson-Drucker und ein
+  Netzwerk. Günstig, einfach und ideal für Events mit digitalem Kassensystem.
 group: Hardware
 published: true
 slug: hardware

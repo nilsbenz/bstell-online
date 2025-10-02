@@ -1,5 +1,8 @@
 ---
 title: Personal
+description:
+  Servicepersonal nutzt eigene Smartphones mit PWA. Accounts werden pro Event
+  erstellt, Bestellungen sind nachvollziehbar und einfach zu verwalten.
 group: Funktionen
 published: true
 slug: funktionen/personal

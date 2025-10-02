@@ -1,5 +1,8 @@
 ---
 title: Online-Bestellungen
+description:
+  "Online-Bestellungen mit «Bstell online»: QR-Codes, Stripe-Zahlung, Trinkgeld,
+  Kommentare und Gebühren flexibel verwalten – direkt vom Smartphone."
 group: Funktionen
 published: true
 slug: funktionen/online-bestellungen

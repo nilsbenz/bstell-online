@@ -1,5 +1,8 @@
 ---
 title: Wie's funktioniert
+description:
+  "Erfahre, wie «Bstell online» technisch funktioniert: Cloud-basiertes
+  Kassensystem mit QR-Bestellung, ePOS-Druckern und einfacher Netzwerkstruktur."
 group: Allgemeines
 published: true
 slug: wies-funktioniert

@@ -1,5 +1,9 @@
 ---
 title: Zahlungsanbieter
+description:
+  «Bstell online» nutzt Stripe für Online-Zahlungen. Direktes Vereinskonto,
+  volle Kontrolle, einfache Einrichtung und Unterstützung für Twint &
+  Kreditkarten.
 group: Funktionen
 published: true
 slug: funktionen/zahlungsanbieter

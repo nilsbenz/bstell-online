@@ -1,5 +1,8 @@
 ---
 title: Über «Bstell online»
+description:
+  «Bstell online» ist ein digitales Bestellsystem für Vereinsanlässe – einfach,
+  skalierbar und kostengünstig. Bestellen per Smartphone oder QR-Code.
 group: Allgemeines
 published: true
 slug: ""

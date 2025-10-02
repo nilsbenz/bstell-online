@@ -1,5 +1,8 @@
 ---
 title: Tische
+description:
+  Aktiviere und verwalte Tische für deinen Event in «Bstell online». Inklusive
+  benutzerdefinierter Tische, Quittungsdruck und QR-Code-Integration.
 group: Funktionen
 published: true
 slug: funktionen/tische
