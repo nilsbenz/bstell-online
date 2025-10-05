@@ -18,6 +18,31 @@ export default function Pricing() {
   return (
     <section className="mx-auto max-w-4xl scroll-mt-24 px-6" id="preise">
       <h2 className="text-3xl font-semibold sm:text-4xl">Und was kostet es?</h2>
+      <div className="mt-4 space-y-2">
+        <p>
+          Das kommt ganz darauf an, was du brauchst. Am günstigsten kommst du,
+          wenn du die{" "}
+          <a href="/docs/hardware" className="font-medium text-foreground">
+            benötigte Hardware
+          </a>{" "}
+          selber anschaffst oder bei einem anderem Verein in deiner Umgebung
+          ausleihst. Dann bezahlst du (neben den einmaligen Anschaffungskosten)
+          nur für die Software.
+        </p>
+        <p>
+          <a href="/docs/hardware" className="font-medium text-foreground">
+            In der Dokumentation
+          </a>{" "}
+          findest du ausführliche Infos und Anleitungen zur benötigten Hardware.
+          Du musst dafür kein Informatiker sein, ein wenig technisches
+          Verständnis schadet aber sicherlich nicht.
+        </p>
+        <p>
+          In Zusammenarbeit mit dem Musikverein Konkordia Au bieten wir Vereinen
+          aus dem St. Galler Rheintal umfangreichen Support, bei Bedarf auch vor
+          Ort.
+        </p>
+      </div>
       <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-20 md:mt-12 md:grid-cols-2">
         <FadeIn className="h-full" delay={0.3}>
           <Card className="relative flex h-full flex-col">
@@ -146,11 +171,11 @@ export default function Pricing() {
       </div>
       <div className="col-span-full mt-20 space-y-4">
         <div>
-          <p>
-            * Preis pro Event mit einer Speisekarte. Die Lizenz ist 7 Tage
-            gültig.
-          </p>
+          <p>* Preis pro Speisekarte pro angefangene 7 Tage.</p>
           <p className="text-muted-foreground">
+            Für Veranstaltungen, die an zwei aufeinanderfolgenden Wochenenden
+            stattfinden, kostet die Lizenz also 200 Fr.
+            <br />
             Preis für grössere Veranstaltungen mit mehreren Speisekarten{" "}
             <a href={`mailto:${EMAIL}`} className="styled">
               auf Anfrage

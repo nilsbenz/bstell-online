@@ -57,6 +57,11 @@ const faqItems = [
     answer:
       "Nein. Das Personal nimmt die Bestellungen mit dem eigenen Smartphone auf.",
   },
+  {
+    question: "Wieso kostet die Lizenz für mehr als 7 Tage mehr?",
+    answer:
+      "Die Lizenzkosten für eine einzelne Veranstaltung sind so konzipiert, dass es sich auch bei kleineren Anlässen lohnt, das Kassensystem zu verwenden. Bei Veranstaltungen, die länger als eine Woche dauern oder an mehreren Wochenenden stattfinden, ist der Umsatz in der Regel gross genug, um die zusätzlichen Kosten zu rechtfertigen. Deshalb wird für jede angefangene Woche eine zusätzliche Gebühr erhoben.",
+  },
 ];
 
 export default function FAQ() {
