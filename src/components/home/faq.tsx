@@ -17,7 +17,7 @@ const faqItems = [
         eine Lizenz, alle anderen Funktionen sind auch ohne verfügbar.
         <br />
         Wie du loslegen kannst, erfährst du in der{" "}
-        <a href="/docs/loslegen" className="styled">
+        <a href="/docs/loslegen/" className="styled">
           Dokumentation
         </a>
         .
@@ -39,7 +39,7 @@ const faqItems = [
         Smartphone (am besten das eigene), um die Bestellungen aufzunehmen.
         <br />
         Genauere Informationen dazu findest du in der{" "}
-        <a href="/docs/hardware" className="styled">
+        <a href="/docs/hardware/" className="styled">
           Dokumentation
         </a>
         .

@@ -22,7 +22,7 @@ export default function Pricing() {
         <p>
           Das kommt ganz darauf an, was du brauchst. Am günstigsten kommst du,
           wenn du die{" "}
-          <a href="/docs/hardware" className="font-medium text-foreground">
+          <a href="/docs/hardware/" className="font-medium text-foreground">
             benötigte Hardware
           </a>{" "}
           selber anschaffst oder bei einem anderem Verein in deiner Umgebung
@@ -30,7 +30,7 @@ export default function Pricing() {
           nur für die Software.
         </p>
         <p>
-          <a href="/docs/hardware" className="font-medium text-foreground">
+          <a href="/docs/hardware/" className="font-medium text-foreground">
             In der Dokumentation
           </a>{" "}
           findest du ausführliche Infos und Anleitungen zur benötigten Hardware.
@@ -57,7 +57,7 @@ export default function Pricing() {
                 Optimal, wenn du bereits einen netzwerkfähigen Epson POS-Drucker
                 besitzt. Siehe{" "}
                 <a
-                  href="/docs/hardware"
+                  href="/docs/hardware/"
                   className="font-medium text-foreground"
                 >
                   Dokumentation
@@ -98,7 +98,7 @@ export default function Pricing() {
               </p>
             </div>
             <a
-              href="/docs/loslegen"
+              href="/docs/loslegen/"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2",

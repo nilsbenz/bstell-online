@@ -85,7 +85,7 @@ export default function DocsNavDrawer({
                         )}
                       >
                         <a
-                          href={`/docs/${e.slug}`}
+                          href={`/docs/${e.slug}/`.replace(/\/\//g, "/")}
                           className="unstyled inline-block w-full rounded-sm px-1 pt-0.5 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                           onClick={handleLinkClicked}
                         >
