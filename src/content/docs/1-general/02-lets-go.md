@@ -37,7 +37,7 @@ Damit etwas bestellt werden kann, muss zuerst die Speisekarte eingetragen
 werden. Auf der Seite «Artikel» definierst du, welche Artikel verfügbar sind, wo
 sie gedruckt werden und was sie kosten.
 
-Mehr Infos zu den Artikeln findest du [hier](/docs/funktionen/artikel).
+Mehr Infos findest du im [Kapitel zu Artikeln](/docs/funktionen/artikel).
 
 ## Tische aktivieren
 
@@ -46,7 +46,7 @@ aktiviert werden. Auf der Seite «Tische» kannst du die Anzahl Reihen und Tisch
 pro Reihe festlegen und die entsprechenden Tische aktivieren. Ausserdem können
 benutzerdefinierte Tische erstellt werden, z.B. für die Theke.
 
-Mehr Infos zu den Artikeln findest du [hier](/docs/funktionen/tische).
+Mehr Infos findest du im [Kapitel zu den Tischen](/docs/funktionen/tische).
 
 ## Testbestellung machen
 
@@ -73,5 +73,5 @@ Testdruck zu machen:
    konfigurierten Drucker hinzu und verbinde ihn. Beachte, dass wenn du die
    Seite neu lädst, die Verbindung zum Drucker unterbrochen wird.
 
-Eine detailliertere Anleitung findest du in
-[diesem Artikel](/docs/hardware/drucker).
+Eine detailliertere Anleitung findest du im
+[Kapitel zu den Druckern](/docs/hardware/drucker).
