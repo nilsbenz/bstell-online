@@ -13,7 +13,7 @@ slug: funktionen/zahlungen
 Um das Personal beim Einkassieren nach der Bestellung zu unterstützen gibt es
 verschiedene Hilfsmittel. Mehr Informationen zu Zahlungen bei
 Online-Bestellungen findest du im
-[entsprechenden Artikel](/docs/funktionen/online-bestellungen).
+[entsprechenden Artikel](/docs/funktionen/online-bestellungen/).
 
 ## Bar- und Twint-Zahlungen
 

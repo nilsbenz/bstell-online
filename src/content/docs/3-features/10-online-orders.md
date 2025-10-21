@@ -11,7 +11,7 @@ slug: funktionen/online-bestellungen
 # Online-Bestellungen
 
 Um Online-Bestellungen anzunehmen, musst du deinen Verein zuerst
-[mit Stripe verbinden](/docs/funktionen/zahlungsanbieter). Dieser Artikel
+[mit Stripe verbinden](/docs/funktionen/zahlungsanbieter/). Dieser Artikel
 beschreibt die verschiedenen Funktionen der Online-Bestellungen.
 
 ## Gebühren

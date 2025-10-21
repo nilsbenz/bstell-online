@@ -53,7 +53,7 @@ testen, ob diese
 sind. Du kannst einfach mal probieren, den Drucker zu verbinden und einen
 Testdruck zu machen.
 
-[In diesem Artikel](/docs/hardware/drucker) findest du mehr Informationen zum
+[In diesem Kapitel](/docs/hardware/drucker/) findest du mehr Informationen zum
 Verbinden der Drucker.
 
 ## Netzwerk
@@ -89,4 +89,4 @@ registriert sich beim Event mit dem eigenen Namen und kann innerhalb weniger
 Minuten loslegen.
 
 Was beim Onboarding vom Personal beachtet werden muss findest du im
-[entsprechenden Artikel](/docs/funktionen/personal).
+[entsprechenden Kapitel](/docs/funktionen/personal/).
