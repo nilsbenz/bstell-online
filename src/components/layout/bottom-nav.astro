@@ -1,12 +1,27 @@
 ---
 import { BstellIcon } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 import { buttonVariants } from "../ui/button";
 import DocsNavDrawer from "./docs-nav-drawer";
 
 const isDocs = Astro.url.pathname.startsWith("/docs");
-const docsEntries = await getCollection("docs");
+const docsEntries = (await getCollection("docs")).filter(
+  (e) => e.data.published,
+);
+const groups = docsEntries.reduce(
+  (acc, entry) => {
+    let group = acc.find((g) => g.key === entry.data.group);
+    if (!group) {
+      group = { key: entry.data.group, entries: [] };
+      acc.push(group);
+    }
+    group.entries.push(entry);
+    return acc;
+  },
+  [] as { key: string; entries: CollectionEntry<"docs">[] }[],
+);
 const currentEntry = docsEntries.find(
   (entry) => entry.slug === Astro.url.pathname.substring(6).replace(/\/$/, ""),
 );
@@ -27,6 +42,7 @@ const currentEntry = docsEntries.find(
       <DocsNavDrawer
         label={currentEntry?.data.title ?? "Menu"}
         currentSlug={currentEntry?.slug ?? ""}
+        groups={groups}
         client:load
       />
     ) : (
