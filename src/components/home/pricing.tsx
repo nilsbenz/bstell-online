@@ -120,7 +120,8 @@ export default function Pricing() {
             </CardTitle>
             <CardDescription>
               In Zusammenarbeit mit dem Musikverein Konkordia Au bieten wir
-              umfangreichen Support, bei Bedarf auch vor Ort.
+              Vereinen aus dem St. Galler Rheintal umfangreichen Support, bei
+              Bedarf auch vor Ort.
             </CardDescription>
           </CardHeader>
           <CardContent className="grow">

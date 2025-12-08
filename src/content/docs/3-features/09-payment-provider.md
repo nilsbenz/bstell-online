@@ -15,6 +15,9 @@ slug: funktionen/zahlungsanbieter
 Vergleich zur Konkurrenz eher günstig und weit verbreitet. Es werden die meisten
 gängigen Zahlungsmethoden unterstützt, unter anderem Kreditkarten und Twint.
 
+> Bitte beachte den untenstehenden **Hinweis zu Twint**, um zu verhindern, dass
+> diese Zahlungsmethode deaktiviert wird.
+
 Zahlungen gehen direkt an das Stripe-Konto deines Vereins, es gibt also keine
 Zwischenstation auf einem «Bstell online»-Konto. Dafür wird
 [Stripe Connect](https://stripe.com/de-ch/connect) verwendet, dasselbe Prinzip
@@ -35,6 +38,26 @@ vorhandenen Account an.
 > späteren Zeitpunkt deaktivieren. Dann können Kunden nicht mehr online bezahlen
 > und daher auch nicht bestellen.
 
+## Wichtiger Hinweis zu Twint
+
+Twint prüft nach der Registrierung bei Stripe die angegebene Vereins-Website und
+das dort enthaltene Impressum. Diese Überprüfung findet möglicherweise erst
+einige Tage oder Wochen nach der Registrierung statt.
+
+> Ist kein Impressum vorhanden oder stimmen die Angaben nicht mit den Angaben im
+> Stripe-Dashboard überein, **wird Twint als Zahlungsmethode deaktiviert**.
+
+Anschliessend können nur noch Zahlungen mit anderen Zahlungsmitteln gemacht
+werden. Mehr Informationen dazu findest du im
+[Support-Center von Twint](https://www.twint.ch/faq/onlineshop-impressum/?audience=business_customer).
+Kontrolliere deshalb, ob du im Stripe Dashboard die richtige Website angegeben
+hast, ein Impressum existiert und dort folgende Informationen enthalten sind:
+
+- Vor- und Nachname oder vollständiger Firmenname bei Unternehmen mit
+  Handelsregistereintrag
+- Adresse
+- E-Mail-Adresse
+
 ## Zahlungsmethoden definieren
 
 Standardmässig sind nur Kartenzahlungen aktiviert. Du kannst im Stripe Dashboard
@@ -50,3 +73,6 @@ bearbeiten</a>
 > **Apple Pay** ist standardmässig aktiviert, muss jedoch noch im Dashboard
 > konfiguriert werden. Dafür bei der Zahlungsmethode «Apple Pay» die Option
 > «Domains konfigurieren» wählen und die Domain bstell.online hinzufügen
+
+> **Twint**: bitte beachte den oben erwähnten Hinweis, um zu verhindern, dass
+> Twint als Zahlungsmethode deaktiviert wird.
