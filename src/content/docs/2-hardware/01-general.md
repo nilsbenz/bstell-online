@@ -36,22 +36,20 @@ Folgende Punkte solltest du beachten:
 ## Drucker
 
 Aktuell werden nur **Netzwerk-Belegdrucker der Marke Epson** unterstützt. In
-Zukunft ist aber geplant, auch andere Marken zu unterstützen. Der
-[Epson TM-T20iii](https://www.galaxus.ch/de/s1/product/epson-tm-t20iii-ethernet-belegdrucker-12343562)
-ist eine kostengünstige und verlässliche Variante. WLAN-Drucker werden nicht
-empfohlen, da die Verbindung aus Erfahrungswerten nicht sehr stabil ist.
+Zukunft ist aber geplant, auch andere Marken zu unterstützen. Der Epson
+TM-T20iii bzw. der neue
+[Epson TM-T20iv](https://www.galaxus.ch/de/s1/product/epson-tm-t20iv-ethernet-rs-232-usb-belegdrucker-57229252)
+ist eine kostengünstige und verlässliche Variante.
 
 Für den Betrieb brauchst du mindestens einen Drucker, es ist aber durchaus
-sinnvoll mehrere Drucker zu platzieren. Einerseits kannst du dann an
+sinnvoll, mehrere Drucker zu platzieren. Einerseits kannst du dann an
 verschiedenen Orten wie z.B. in der Küche und dem Ausschank drucken,
 andererseits hast du so eine Ausweichmöglichkeit, falls ein Drucker den Geist
 aufgibt.
 
 Falls du bereits Belegdrucker hast, kannst du auch ohne den Kauf einer Lizenz
-testen, ob diese
-[kompatibel](https://download4.epson.biz/sec_pubs/pos/reference_en/epos_js/ref_epos_sdk_js_en_devicespecifications_listofsupportedobjects.html)
-sind. Du kannst einfach mal probieren, den Drucker zu verbinden und einen
-Testdruck zu machen.
+testen, ob diese [kompatibel](/downloads/supported_printers.pdf) sind. Du kannst
+einfach mal probieren, den Drucker zu verbinden und einen Testdruck zu machen.
 
 [In diesem Kapitel](/docs/hardware/drucker/) findest du mehr Informationen zum
 Verbinden der Drucker.
@@ -70,9 +68,9 @@ gespeichert werden.
 ### Mobiler 4G-Router
 
 Falls kein bestehendes Netzwerk vorhanden ist, kannst du beispielsweise einen
-[mobilen 4G-Router](https://digitalrepublic.ch/de/produkt/4g-home-start/)
-verwenden. Hast du den Router einmal angeschafft, zahlst du nur noch für die
-Daten-SIM.
+[mobilen 4G-Router](https://www.galaxus.ch/de/s1/product/tp-link-tl-mr6400-router-6078813)
+mit einer [Daten-SIM](https://digitalrepublic.ch/smarte-geraete/) verwenden.
+Hast du den Router einmal angeschafft, zahlst du nur noch für die Daten-SIM.
 
 ### Ethernet-Kabel
 

@@ -27,7 +27,7 @@ registrieren.
 > Bestimmte Browser unterstützen PWAs nicht (richtig). Daher sollte auf iOS
 > immer **Safari** und auf Android immer **Google Chrome** verwendet werden.
 
-1. Das Personal scannt den Beitrittscode unten bei den Anfragen
+1. Das Personal scannt den Beitritts-QR-Code unten bei den Anfragen
 1. Falls noch nicht geschehen, wird man dann aufgefordert die PWA zu
    installieren. Anschliessend muss der QR-Code nochmal **mit der PWA** gescannt
    werden
@@ -44,6 +44,14 @@ registrieren.
 
 Das Servicepersonal kann jederzeit wieder entfernt werden. Ab diesem Moment kann
 die entsprechende Person dann keine Bestellungen mehr aufgeben.
+
+### Per Beitrittscode
+
+Falls die Kamera in der PWA nicht funktioniert, oder du das Personal bereits im
+Vorfeld hinzufügen willst, kann der Beitrittscode verwendet werden. Dieser setzt
+sich aus der Vereins-ID und der Event-ID zusammen und kann ebenfalls auf der
+Startseite der App eingegeben werden. Den Code findest du auf der Personal-Seite
+beim QR-Code.
 
 ## Event Admins
 
