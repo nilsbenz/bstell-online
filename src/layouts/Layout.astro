@@ -82,16 +82,8 @@ const { title, description, printOnlyMain } = Astro.props;
     <BottomNav />
 
     <script
-      async
-      defer
-      is:inline
-      src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript>
-      <img
-        src="https://queue.simpleanalyticscdn.com/noscript.gif"
-        alt=""
-        referrerpolicy="no-referrer-when-downgrade"
-      />
-    </noscript>
+      type="module"
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "3ef65c104b6e428080cc8b4d6564ed22"}'></script>
   </body>
 </html>
